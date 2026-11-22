@@ -1,5 +1,8 @@
 leftbar:
-  brand:
-    name: analog circuit
-    tagline: designer
-    href: /
+  menu:
+    - id: post
+      title: 博客
+      url: /
+    - id: wiki
+      title: 知识库
+      url: /wiki/
