@@ -16,6 +16,9 @@ topbar:
     - id: home
       title: 主页
       url: /
+    - id: blog
+      title: 博客
+      url: /blog/
     - id: books
       title: 书籍
       url: /books/
@@ -53,6 +56,7 @@ footer:
     - title: 站点
       items:
         - '[主页](/)'
+        - '[博客](/blog/)'
         - '[归档](/archives/)'
         - '[书籍](/books/)'
         - '[模块](/blocks/)'
@@ -70,3 +74,26 @@ canonical:
 structured_data:
   same_as:
     - https://github.com/pupu-analog
+
+# 首页专用样式，沿用 designers-guide.org 的宽幅单栏文档风格
+inject:
+  head_end: |
+    <style>
+    .guide-home { max-width: 980px; margin: 0 auto; padding: 24px 20px 56px; color: var(--color-text-primary, #24313d); font-family: var(--font-serif, Georgia, "Times New Roman", serif); line-height: 1.7; }
+    .guide-home a { color: var(--color-link, #1b5e9c); text-decoration: none; }
+    .guide-home a:hover { text-decoration: underline; }
+    .guide-masthead { width: 100%; border: 1px solid #b9c6d2; border-radius: 4px; overflow: hidden; }
+    .guide-masthead img { display: block; width: 100%; height: auto; }
+    .guide-intro h1 { font-size: 28px; font-weight: 500; margin: 28px 0 12px; }
+    .guide-intro p { font-size: 15px; margin: 0 0 14px; }
+    .guide-sections { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 24px 0 32px; }
+    .guide-section { border: 1px solid var(--color-border-tertiary, #d5dce3); border-radius: 8px; padding: 14px 16px; background: var(--color-background-primary, #fff); }
+    .guide-section h3 { margin: 0 0 4px; font-size: 16px; font-weight: 500; }
+    .guide-section p { margin: 0; font-size: 13px; color: var(--color-text-secondary, #53606d); }
+    .guide-whats-new h2 { font-size: 22px; font-weight: 500; border-bottom: 2px solid #2c4d70; padding-bottom: 8px; margin: 0 0 20px; }
+    .guide-update { border-bottom: 1px solid var(--color-border-tertiary, #d5dce3); padding: 12px 0; }
+    .guide-update h3 { margin: 0 0 4px; font-size: 16px; font-weight: 500; }
+    .guide-update-date { margin: 0 0 6px; font-size: 12px; color: var(--color-text-tertiary, #77828d); }
+    .guide-update-excerpt { margin: 0; font-size: 14px; color: var(--color-text-secondary, #53606d); }
+    @media (max-width: 640px) { .guide-sections { grid-template-columns: 1fr; } .guide-home { padding: 16px 14px 40px; } }
+    </style>

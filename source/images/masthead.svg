@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180">
+  <rect width="1200" height="180" fill="#1f3554"/>
+  <rect x="10" y="10" width="1180" height="160" fill="none" stroke="#c8a45c" stroke-width="2"/>
+  <rect x="18" y="18" width="1164" height="144" fill="none" stroke="#7f9bbd" stroke-width="0.7"/>
+  <text x="54" y="92" font-family="Georgia, 'Times New Roman', serif" font-size="56" fill="#f5f1e8">pupu analog</text>
+  <text x="56" y="132" font-family="Georgia, 'Times New Roman', serif" font-size="17" letter-spacing="4" fill="#c8d6e5">ANALOG DESIGN · READING · PRACTICE</text>
+  <g fill="none" stroke="#7f9bbd" stroke-width="1.2">
+    <path d="M900 52h120v28h70"/>
+    <path d="M900 90h85v28h105"/>
+    <path d="M900 128h160"/>
+    <circle cx="1020" cy="52" r="4" fill="#c8a45c" stroke="none"/>
+    <circle cx="985" cy="90" r="4" fill="#c8a45c" stroke="none"/>
+    <circle cx="1060" cy="128" r="4" fill="#c8a45c" stroke="none"/>
+  </g>
+</svg>
