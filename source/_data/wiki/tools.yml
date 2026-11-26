@@ -1,0 +1,12 @@
+name: 工具
+headline: 工具箱
+tagline: 设计、仿真与写作中顺手的工具
+description: 记录常用软件、脚本、命令与环境配置。
+route:
+  path: /tools/
+navigation:
+  tree:
+    '总览':
+      - index
+listing:
+  order: 5

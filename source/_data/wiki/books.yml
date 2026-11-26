@@ -1,0 +1,17 @@
+name: 书籍
+headline: 模拟设计书架
+tagline: 用阅读建立模拟设计的知识体系
+description: 按主题整理模拟电路、模拟集成电路与 ADC 相关书籍和读书笔记。
+route:
+  path: /books/
+navigation:
+  tree:
+    '总览':
+      - index
+    '模拟设计':
+      - book1
+      - book2
+    'ADC':
+      - book3
+listing:
+  order: 1

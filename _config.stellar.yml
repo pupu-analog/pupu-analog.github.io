@@ -1,8 +1,72 @@
+# 关闭左侧栏
 leftbar:
+  enabled: false
+
+# 启用顶部栏
+topbar:
+  enabled: true
+  brand:
+    image:
+      src: /images/avatar.svg
+      variant: avatar
+    name: pupu analog
+    tagline: 模拟设计读书与实践笔记
+    href: /
   menu:
-    - id: post
-      title: 博客
+    - id: home
+      title: 主页
       url: /
-    - id: wiki
-      title: 知识库
-      url: /wiki/
+    - id: books
+      title: 书籍
+      url: /books/
+    - id: blocks
+      title: 模块
+      url: /blocks/
+    - id: projects
+      title: 项目
+      url: /projects/
+    - id: others
+      title: 其它
+      url: /others/
+    - id: tools
+      title: 工具
+      url: /tools/
+    - id: tbd
+      title: 待整理
+      url: /tbd/
+  widgets: [spacer, menu, settings]
+
+# 首页单独覆盖，确保顶栏在根路径显示
+profiles:
+  home:
+    topbar:
+      enabled: true
+      widgets: [spacer, menu, settings]
+  blog_index:
+    listing_nav:
+      enabled: false
+
+# 页脚身份与导航
+footer:
+  content: '© 2026 pupu · 本站内容除特别声明外采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。'
+  sitemap:
+    - title: 站点
+      items:
+        - '[主页](/)'
+        - '[归档](/archives/)'
+        - '[书籍](/books/)'
+        - '[模块](/blocks/)'
+        - '[项目](/projects/)'
+    - title: 更多
+      items:
+        - '[其它](/others/)'
+        - '[工具](/tools/)'
+        - '[待整理](/tbd/)'
+        - '[GitHub](https://github.com/pupu-analog)'
+
+# SEO
+canonical:
+  host: pupu-analog.github.io
+structured_data:
+  same_as:
+    - https://github.com/pupu-analog

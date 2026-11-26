@@ -1,0 +1,12 @@
+name: 项目
+headline: 个人项目与实践
+tagline: 从想法到可运行的实现
+description: 记录个人项目、实验平台、阶段性成果与复盘。
+route:
+  path: /projects/
+navigation:
+  tree:
+    '总览':
+      - index
+listing:
+  order: 3

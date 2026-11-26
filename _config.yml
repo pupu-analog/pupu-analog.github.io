@@ -1,10 +1,14 @@
-title: Hexo
-subtitle: ''
-description: ''
-keywords: null
-author: John Doe
+title: pupu analog
+subtitle: 模拟设计读书与实践笔记
+description: 记录模拟电路、ADC、读书笔记、工程模块与个人项目。
+keywords:
+  - 模拟电路
+  - ADC
+  - 读书笔记
+  - 个人博客
+author: pupu
 language: zh-CN
-timezone: ''
+timezone: Asia/Shanghai
 url: https://pupu-analog.github.io
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
@@ -38,6 +42,7 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+favicon: /favicon.svg
 prismjs:
   preprocess: true
   line_number: true

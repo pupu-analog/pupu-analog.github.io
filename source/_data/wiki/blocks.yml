@@ -1,0 +1,14 @@
+name: 模块
+headline: 可复用的设计模块
+tagline: 把电路、流程与经验沉淀成可复用的模块
+description: 记录模拟设计中常用的电路模块、设计步骤、参数取舍与验证方法。
+route:
+  path: /blocks/
+navigation:
+  tree:
+    '总览':
+      - index
+    '示例':
+      - example1
+listing:
+  order: 2

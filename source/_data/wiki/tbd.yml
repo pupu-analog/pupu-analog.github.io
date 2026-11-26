@@ -1,0 +1,12 @@
+name: 待整理
+headline: 待整理
+tagline: 先记下来，之后再归类
+description: 临时收集尚未完成的草稿、链接和灵感。
+route:
+  path: /tbd/
+navigation:
+  tree:
+    '总览':
+      - index
+listing:
+  order: 6

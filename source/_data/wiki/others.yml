@@ -1,0 +1,12 @@
+name: 其它
+headline: 零散记录
+tagline: 收纳尚未归类的资料与想法
+description: 用于存放暂时不属于书籍、模块、项目或工具的笔记。
+route:
+  path: /others/
+navigation:
+  tree:
+    '总览':
+      - index
+listing:
+  order: 4
