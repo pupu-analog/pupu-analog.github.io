@@ -15,6 +15,38 @@ navigation:
       - book4
       - book5
       - book6
+    'Analog circuits design 系列':
+      - aacd-1993
+      - aacd-1994
+      - aacd-1995
+      - aacd-1996
+      - aacd-1997
+      - aacd-1998
+      - aacd-1999
+      - aacd-2000
+      - aacd-2001
+      - aacd-2002
+      - aacd-2003
+      - aacd-2004
+      - aacd-2005
+      - aacd-2006
+      - aacd-2007
+      - aacd-2008
+      - aacd-2009
+      - aacd-2010
+      - aacd-2011
+      - aacd-2012
+      - aacd-2013
+      - aacd-2014
+      - aacd-2015
+      - aacd-2016
+      - aacd-2017
+      - aacd-2018
+      - aacd-2019
+      - aacd-2020
+      - aacd-2022
+      - aacd-2023
+      - aacd-2025
     '其它主题':
       - analog-simulation
       - adc-architecture
