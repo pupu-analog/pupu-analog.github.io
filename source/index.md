@@ -6,6 +6,12 @@ comments:
   enabled: false
 ---
 
+<style>
+/* 主页正文全部隐藏，只保留右侧目录栏（标题结构保留用于生成目录） */
+.site-main .article-banner-wrap,
+.site-main article.md-text { display: none !important; }
+</style>
+
 <div class="guide-home">
   <div class="guide-sections">
     <div class="guide-section"><h3><a href="/books/">书籍</a></h3><p>模拟设计经典教材与逐章读书笔记</p></div>
