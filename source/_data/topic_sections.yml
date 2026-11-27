@@ -1,0 +1,39 @@
+# topic 页配置（/others/）
+# 布局与书籍页一致：多个子分类，每个分类包含多个条目，每条只显示带链接的名字。
+#   - name : 显示的名字（名字链接到 url）
+#   - url  : 名字要跳转的网址（外部资料页 / Google 搜索）
+# 页面末尾统一显示一个「阅读整理」入口，指向下面的 reading_url。
+# 后续添加：在对应分类的 items 下追加即可；新增分类则复制一个 section 块。
+
+reading_url: /others/topic-notes/
+
+sections:
+  - key: analog-basics
+    title: 模拟基础
+    items:
+      - name: 运算放大器基础
+        url: https://www.google.com/search?q=operational+amplifier+fundamentals+analog+CMOS
+      - name: 电流镜与偏置网络
+        url: https://www.google.com/search?q=current+mirror+biasing+network+analog+CMOS
+      - name: 带隙基准与温度补偿
+        url: https://www.google.com/search?q=bandgap+reference+temperature+compensation+analog+CMOS
+
+  - key: data-converters
+    title: 数据转换器
+    items:
+      - name: SAR ADC 架构
+        url: https://www.google.com/search?q=SAR+ADC+architecture+analog+CMOS
+      - name: Sigma-Delta 调制器
+        url: https://www.google.com/search?q=sigma+delta+modulator+ADC+analog+CMOS
+      - name: 流水线 ADC
+        url: https://www.google.com/search?q=pipelined+ADC+architecture+analog+CMOS
+
+  - key: rf-clock
+    title: 射频与时钟
+    items:
+      - name: 锁相环 PLL
+        url: https://www.google.com/search?q=phase+locked+loop+PLL+analog+CMOS+design
+      - name: 低噪声放大器 LNA
+        url: https://www.google.com/search?q=low+noise+amplifier+LNA+analog+CMOS+design
+      - name: 压控振荡器 VCO
+        url: https://www.google.com/search?q=voltage+controlled+oscillator+VCO+analog+CMOS+design

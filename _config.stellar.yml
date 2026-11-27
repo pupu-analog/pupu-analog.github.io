@@ -23,14 +23,14 @@ topbar:
       title: 书籍
       url: /books/
     - id: blocks
-      title: 模块
+      title: 电路
       url: /blocks/
+    - id: others
+      title: topic
+      url: /others/
     - id: projects
       title: 项目
       url: /projects/
-    - id: others
-      title: 其它
-      url: /others/
     - id: tools
       title: 工具
       url: /tools/
@@ -59,11 +59,11 @@ footer:
         - '[博客](/blog/)'
         - '[归档](/archives/)'
         - '[书籍](/books/)'
-        - '[模块](/blocks/)'
+        - '[电路](/blocks/)'
+        - '[topic](/others/)'
         - '[项目](/projects/)'
     - title: 更多
       items:
-        - '[其它](/others/)'
         - '[工具](/tools/)'
         - '[待整理](/tbd/)'
         - '[GitHub](https://github.com/pupu-analog)'
