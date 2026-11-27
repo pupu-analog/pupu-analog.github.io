@@ -1,0 +1,29 @@
+# 书籍页的子分类配置
+# 每个分类会渲染成「一整行横向网格模块」，卡片在该分类下横向排列。
+# 后续添加内容：在对应分类的 items 下追加一条即可，不需要改页面代码。
+# 新增分类：复制一个 - key: ... 的块，改 key/title/description，追加到 sections 末尾。
+
+sections:
+  - key: foundations
+    title: 子分类一
+    description: 名称待定 · 这个分类下的卡片会横向排列，可陆续添加
+    items:
+      - title: 模拟电子技术基础
+        url: /books/book1/
+        note: 器件模型、放大电路、反馈与频率响应
+      - title: 模拟集成电路设计与仿真
+        url: /books/book2/
+        note: 电流镜、差分对、运放与版图约束
+
+  - key: converters
+    title: 子分类二
+    description: 名称待定 · 后续新增的条目会继续往右排，自动换行
+    items:
+      - title: ADC 架构与设计
+        url: /books/book3/
+        note: SAR、Pipeline、Sigma-Delta 等常见架构
+
+  - key: notes
+    title: 子分类三
+    description: 名称待定 · 暂时留空，之后直接往 items 里加条目就会出现卡片
+    items: []
