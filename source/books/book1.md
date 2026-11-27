@@ -1,22 +1,33 @@
 ---
-title: 模拟电子技术基础
+title: Analysis and Design of Analog Integrated Circuits 5th - Gray
 date: 2026-11-20
 collection:
   profile: wiki
   id: books
 ---
 
-## 本书定位
+# Analysis and Design of Analog Integrated Circuits（第五版）大纲目录
 
-用一本基础教材建立模拟电路的共同语言：器件模型、放大电路、反馈与频率响应。
+作者：Paul R. Gray、Paul J. Hurst、Stephen H. Lewis、Robert G. Meyer（Wiley，2009）
+ISBN：978-0-470-24599-6
 
-## 阅读重点
+以下是该书的大纲目录（章节标题按英文原文摘录），后续阅读笔记按章节逐步补充。
 
-- 二极管与 BJT/MOSFET 的基本模型
-- 单级与多级放大电路
-- 反馈拓扑与稳定性
-- 频率响应与带宽估算
+## 目录（Table of Contents）
 
-## 输出形式
+1. Models for Integrated-Circuit Active Devices
+2. Bipolar, MOS, and BiCMOS Integrated-Circuit Technology
+3. Single-Transistor and Multiple-Transistor Amplifiers
+4. Current Mirrors, Active Loads, and References
+5. Output Stages
+6. Operational Amplifiers with Single-Ended Outputs
+7. Frequency Response of Integrated Circuits
+8. Feedback
+9. Frequency Response and Stability of Feedback Amplifiers
+10. Nonlinear Analog Circuits
+11. Noise in Integrated Circuits
+12. Fully Differential Operational Amplifiers
 
-读完每章后整理一页笔记，记录核心公式、适用条件和常见近似。
+## 阅读笔记
+
+（按章节陆续补充：每章整理核心模型、设计取舍、公式与仿真验证要点。）
