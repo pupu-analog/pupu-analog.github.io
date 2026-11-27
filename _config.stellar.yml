@@ -26,7 +26,7 @@ topbar:
       title: 电路
       url: /blocks/
     - id: devices
-      title: 器件与工艺
+      title: 器件工艺
       url: /devices/
     - id: others
       title: topic
@@ -63,7 +63,7 @@ footer:
         - '[归档](/archives/)'
         - '[书籍](/books/)'
         - '[电路](/blocks/)'
-        - '[器件与工艺](/devices/)'
+        - '[器件工艺](/devices/)'
         - '[topic](/others/)'
         - '[项目](/projects/)'
     - title: 更多
@@ -112,5 +112,16 @@ inject:
     .bk-reading { color: var(--color-link, #1b5e9c); text-decoration: none; font-size: 15px; }
     a.bk-reading:hover { text-decoration: underline; }
     .bk-empty { font-size: 14px; color: var(--color-text-tertiary, #77828d); }
+    /* 博客列表：单行紧凑，只显示标题和发表日期（按主题倒序） */
+    .site-main .post-list.post { margin: 8px 0 0; }
+    .site-main .post-list.post .post-card-wrap { margin: 0; box-shadow: none; border-radius: 0; }
+    .site-main .post-list.post .post-card { display: block; background: none; border-radius: 0; }
+    .site-main .post-list.post .md-text { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px; padding: 6px 0; }
+    .site-main .post-list.post .post-title { margin: 0; font-size: 15px; font-weight: 400; line-height: 1.5; color: var(--color-link, #1b5e9c); text-decoration: none; }
+    .site-main .post-list.post .post-card:hover .post-title, .site-main .post-list.post .post-card:focus-visible .post-title { text-decoration: underline; }
+    .site-main .post-list.post .excerpt, .site-main .post-list.post .breadcrumb, .site-main .post-list.post .card-tags, .site-main .post-list.post .pin, .site-main .post-list.post .post-cover { display: none !important; }
+    .site-main .post-list.post .meta.cap { margin: 0; font-size: 13px; line-height: 1.5; }
+    .site-main .post-list.post .meta.cap svg, .site-main .post-list.post .meta.cap > span + span { display: none; }
+    .site-main .post-list.post .meta.cap time { color: var(--color-text-tertiary, #77828d); }
     @media (max-width: 640px) { .guide-sections { grid-template-columns: 1fr; } .bk-two-col { grid-template-columns: 1fr; gap: 16px; } .guide-home { padding: 16px 14px 40px; } }
     </style>

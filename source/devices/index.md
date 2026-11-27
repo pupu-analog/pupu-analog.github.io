@@ -1,5 +1,5 @@
 ---
-title: 器件与工艺
+title: 器件工艺
 layout: page
 comments:
   enabled: false
