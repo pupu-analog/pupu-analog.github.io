@@ -10,5 +10,9 @@ navigation:
       - index
     '示例':
       - example1
+    '专题':
+      - opamp
+      - stability
+      - current-mirror
 listing:
   order: 2

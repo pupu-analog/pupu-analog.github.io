@@ -1,0 +1,49 @@
+# Topic 落地页配置
+# 每个 topic 的页面与书籍页布局一致：多个子分类，每个分类包含多个条目。
+# 条目格式：name（带链接的名字）+ url（目标网址）。
+# topic id 需与 block_sections.yml 中 topics[].id 对应，并生成同名 md 页面。
+
+topics:
+  opamp:
+    title: 运放设计专题
+    sections:
+      - title: 关键指标
+        items:
+          - name: 开环增益与带宽
+            url: https://www.google.com/search?q=opamp+open+loop+gain+bandwidth+analog+CMOS
+          - name: 输入失调与噪声
+            url: https://www.google.com/search?q=opamp+offset+noise+analog+CMOS+design
+      - title: 经典结构
+        items:
+          - name: 两级运放
+            url: https://www.google.com/search?q=two+stage+operational+amplifier+analog+CMOS
+          - name: 共源共栅运放
+            url: https://www.google.com/search?q=cascode+operational+amplifier+analog+CMOS
+
+  stability:
+    title: 稳定性与频率补偿专题
+    sections:
+      - title: 稳定性分析
+        items:
+          - name: 极点与零点
+            url: https://www.google.com/search?q=opamp+poles+zeros+stability+analog+CMOS
+          - name: 相位裕度与阶跃响应
+            url: https://www.google.com/search?q=phase+margin+step+response+opamp+stability
+      - title: 补偿方法
+        items:
+          - name: 米勒补偿与调零电阻
+            url: https://www.google.com/search?q=Miller+compensation+nulling+resistor+opamp
+
+  current-mirror:
+    title: 电流镜专题
+    sections:
+      - title: 基本结构
+        items:
+          - name: 简单 CMOS 电流镜
+            url: https://www.google.com/search?q=simple+CMOS+current+mirror+analog+design
+          - name: 共源共栅电流镜
+            url: https://www.google.com/search?q=cascode+current+mirror+analog+CMOS
+      - title: 改进技术
+        items:
+          - name: Wilson 电流镜
+            url: https://www.google.com/search?q=Wilson+current+mirror+analog+design

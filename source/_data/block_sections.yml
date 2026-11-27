@@ -1,0 +1,35 @@
+# 模块页配置（/blocks/）
+# 页面结构与书籍页一致：多个子分类，每个子分类占一个区块。
+# 区别：每个子分类下方竖向分成两列——
+#   第一列 items  : 每行一个条目，名字链接到 url（外部资料页）
+#   第二列 topics : 每行一个 topic，名字链接到对应的 topic 落地页
+# 后续添加：在对应分类的 items / topics 下追加即可；新增分类则复制一个 section 块。
+
+sections:
+  - key: amplifier
+    title: 放大器模块
+    items:
+      - name: 运算放大器
+        url: https://www.google.com/search?q=operational+amplifier+analog+CMOS+design
+      - name: 跨导放大器 OTA
+        url: https://www.google.com/search?q=operational+transconductance+amplifier+analog+CMOS
+      - name: 比较器
+        url: https://www.google.com/search?q=comparator+analog+CMOS+design
+    topics:
+      - name: 运放设计专题
+        id: opamp
+      - name: 稳定性与频率补偿专题
+        id: stability
+
+  - key: current-reference
+    title: 电流与基准模块
+    items:
+      - name: 电流镜
+        url: https://www.google.com/search?q=current+mirror+analog+CMOS+design
+      - name: 带隙基准
+        url: https://www.google.com/search?q=bandgap+reference+analog+CMOS+design
+      - name: 低压差线性稳压器 LDO
+        url: https://www.google.com/search?q=LDO+analog+CMOS+design
+    topics:
+      - name: 电流镜专题
+        id: current-mirror

@@ -99,6 +99,8 @@ inject:
     .bk-section { margin: 0 0 30px; }
     .bk-section-title { font-size: 20px; font-weight: 500; border-bottom: 2px solid #2c4d70; padding-bottom: 8px; margin: 0 0 14px; }
     .bk-grid { display: flex; flex-direction: column; gap: 10px; }
+    .bk-two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+    .bk-col { display: flex; flex-direction: column; gap: 10px; }
     .bk-item { display: flex; align-items: baseline; font-size: 15px; line-height: 1.5; }
     .bk-name { color: var(--color-link, #1b5e9c); text-decoration: none; }
     .bk-name:hover { text-decoration: underline; }
@@ -106,5 +108,5 @@ inject:
     .bk-reading { color: var(--color-link, #1b5e9c); text-decoration: none; font-size: 15px; }
     a.bk-reading:hover { text-decoration: underline; }
     .bk-empty { font-size: 14px; color: var(--color-text-tertiary, #77828d); }
-    @media (max-width: 640px) { .guide-sections { grid-template-columns: 1fr; } .guide-home { padding: 16px 14px 40px; } }
+    @media (max-width: 640px) { .guide-sections { grid-template-columns: 1fr; } .bk-two-col { grid-template-columns: 1fr; gap: 16px; } .guide-home { padding: 16px 14px 40px; } }
     </style>
