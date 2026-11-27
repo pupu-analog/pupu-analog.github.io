@@ -16,7 +16,9 @@ function normalizeUrl(value) {
   return "/" + raw.replace(/^\/+/, "");
 }
 
-// 渲染书籍页：每个子分类 = 一整行横向网格模块，条目在网格里横向排列。
+// 渲染书籍页：每个子分类 = 一整行横向网格。
+// 卡片格式：名字:读书整理（名字链接到 url，读书整理可选链接到 reading_url）。
+// 卡片自身保持单行、高度最窄，横向排不下时自动换行。
 // 数据源：source/_data/book_sections.yml
 hexo.extend.tag.register("book_sections", function () {
   var data = (hexo.locals.get("data") || {}).book_sections || {};
@@ -28,33 +30,28 @@ hexo.extend.tag.register("book_sections", function () {
 
   return sections.map(function (section) {
     var title = escapeHtml(section.title || "未命名分类");
-    var desc = escapeHtml(section.description || "");
     var items = section.items || [];
 
     var cards = items.map(function (item) {
       var href = normalizeUrl(item.url);
-      var name = escapeHtml(item.title || "未命名条目");
-      var note = escapeHtml(item.note || "");
-      var titleHtml = href
-        ? '<a class="bk-card-title" href="' + escapeHtml(href) + '">' + name + "</a>"
-        : '<span class="bk-card-title">' + name + "</span>";
-      return '<div class="bk-card">' +
-        titleHtml +
-        (note ? '<p class="bk-card-note">' + note + "</p>" : "") +
-        "</div>";
+      var name = escapeHtml(item.name || "未命名");
+      var reading = escapeHtml(item.reading == null ? "读书整理" : item.reading);
+      var readingHref = normalizeUrl(item.reading_url);
+
+      var nameHtml = href
+        ? '<a class="bk-name" href="' + escapeHtml(href) + '">' + name + "</a>"
+        : '<span class="bk-name">' + name + "</span>";
+      var readingHtml = readingHref
+        ? '<a class="bk-reading" href="' + escapeHtml(readingHref) + '">' + reading + "</a>"
+        : '<span class="bk-reading">' + reading + "</span>";
+
+      return '<span class="bk-item">' + nameHtml +
+        '<span class="bk-colon">: </span>' + readingHtml + "</span>";
     });
 
-    // 空分类保留一个占位卡，提示这里后续可以添加内容
-    if (!cards.length) {
-      cards = ['<div class="bk-card bk-card--empty"><span class="bk-card-title">待添加内容</span><p class="bk-card-note">在配置文件的 items 下追加条目即可出现在这里</p></div>'];
-    }
-
     return '<section class="bk-section">' +
-      '<div class="bk-section-head">' +
-        '<h2 class="bk-section-title">' + title + "</h2>" +
-        (desc ? '<p class="bk-section-desc">' + desc + "</p>" : "") +
-      "</div>" +
-      '<div class="bk-grid">' + cards.join("") + "</div>" +
+      '<h2 class="bk-section-title">' + title + "</h2>" +
+      (cards.length ? '<div class="bk-grid">' + cards.join("") + "</div>" : "") +
       "</section>";
   }).join("");
 }, { ends: false });
