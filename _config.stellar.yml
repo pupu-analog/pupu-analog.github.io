@@ -25,6 +25,9 @@ topbar:
     - id: blocks
       title: 电路
       url: /blocks/
+    - id: devices
+      title: 器件与工艺
+      url: /devices/
     - id: others
       title: topic
       url: /others/
@@ -32,10 +35,10 @@ topbar:
       title: 项目
       url: /projects/
     - id: tools
-      title: 工具
+      title: 仿真
       url: /tools/
     - id: tbd
-      title: 待整理
+      title: 质量
       url: /tbd/
   widgets: [spacer, menu, settings]
 
@@ -60,12 +63,13 @@ footer:
         - '[归档](/archives/)'
         - '[书籍](/books/)'
         - '[电路](/blocks/)'
+        - '[器件与工艺](/devices/)'
         - '[topic](/others/)'
         - '[项目](/projects/)'
     - title: 更多
       items:
-        - '[工具](/tools/)'
-        - '[待整理](/tbd/)'
+        - '[仿真](/tools/)'
+        - '[质量](/tbd/)'
         - '[GitHub](https://github.com/pupu-analog)'
 
 # SEO

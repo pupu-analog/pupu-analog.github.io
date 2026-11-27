@@ -1,12 +1,13 @@
-name: 工具
-headline: 工具箱
-tagline: 设计、仿真与写作中顺手的工具
-description: 记录常用软件、脚本、命令与环境配置。
+name: 仿真
+headline: 仿真
+tagline: 电路仿真、建模与验证方法
+description: 整理 EDA 仿真工具、行为级建模与验证方法相关资料。
 route:
   path: /tools/
 navigation:
   tree:
     '总览':
       - index
+      - simulation-notes
 listing:
-  order: 5
+  order: 6

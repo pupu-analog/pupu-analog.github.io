@@ -1,0 +1,25 @@
+# 仿真页配置（/tools/）
+# 布局与书籍页一致：多个子分类，每条只显示带链接的名字。
+
+reading_url: /tools/simulation-notes/
+
+sections:
+  - key: eda
+    title: EDA 仿真工具
+    items:
+      - name: Cadence Spectre 仿真
+        url: https://www.google.com/search?q=Cadence+Spectre+simulation+tutorial+analog+IC
+      - name: ngspice 开源仿真
+        url: https://www.google.com/search?q=ngspice+open+source+circuit+simulator+tutorial
+      - name: LTspice 快速验证
+        url: https://www.google.com/search?q=LTspice+circuit+simulation+tutorial
+
+  - key: modeling
+    title: 建模与验证
+    items:
+      - name: Verilog-A 行为级建模
+        url: https://www.google.com/search?q=Verilog-A+behavioral+modeling+analog+IC
+      - name: 蒙特卡洛与工艺角仿真
+        url: https://www.google.com/search?q=Monte+Carlo+corner+simulation+analog+IC+Spectre
+      - name: Python 数据处理与可视化
+        url: https://www.google.com/search?q=Python+simulation+data+analysis+matplotlib+analog+IC

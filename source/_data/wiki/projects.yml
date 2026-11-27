@@ -8,5 +8,6 @@ navigation:
   tree:
     '总览':
       - index
+      - project-notes
 listing:
-  order: 3
+  order: 5

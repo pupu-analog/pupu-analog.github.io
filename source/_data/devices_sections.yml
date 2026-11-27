@@ -1,0 +1,34 @@
+# 器件与工艺页配置（/devices/）
+# 布局与书籍页一致：多个子分类，每条只显示带链接的名字。
+# 页面末尾统一的「阅读整理」入口指向 reading_url。
+
+reading_url: /devices/device-notes/
+
+sections:
+  - key: mos-device
+    title: MOS 器件
+    items:
+      - name: MOS 晶体管工作原理
+        url: https://www.google.com/search?q=MOS+transistor+operation+principles+semiconductor+device
+      - name: 短沟道效应
+        url: https://www.google.com/search?q=short+channel+effects+MOSFET+CMOS+technology
+      - name: 器件模型与 SPICE 参数
+        url: https://www.google.com/search?q=MOS+device+model+SPICE+parameters+BSIM
+
+  - key: process
+    title: 工艺与制造
+    items:
+      - name: CMOS 工艺流程图
+        url: https://www.google.com/search?q=CMOS+process+flow+fabrication+steps
+      - name: 光刻与刻蚀
+        url: https://www.google.com/search?q=lithography+etching+semiconductor+manufacturing+process
+      - name: 离子注入与退火
+        url: https://www.google.com/search?q=ion+implantation+annealing+semiconductor+process
+
+  - key: layout
+    title: 版图与可靠性
+    items:
+      - name: 匹配与天线效应
+        url: https://www.google.com/search?q=layout+matching+antenna+effect+analog+IC
+      - name: ESD 保护结构
+        url: https://www.google.com/search?q=ESD+protection+structure+CMOS+IC+design

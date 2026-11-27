@@ -1,0 +1,23 @@
+# 项目页配置（/projects/）
+# 布局与书籍页一致：多个子分类，每条只显示带链接的名字。
+
+reading_url: /projects/project-notes/
+
+sections:
+  - key: analog-ic
+    title: 模拟集成电路
+    items:
+      - name: 低功耗运放设计与流片验证
+        url: https://www.google.com/search?q=low+power+operational+amplifier+tapeout+design+project
+      - name: 高精度带隙基准设计
+        url: https://www.google.com/search?q=bandgap+reference+design+project+analog+IC
+      - name: SAR ADC 原型验证
+        url: https://www.google.com/search?q=SAR+ADC+prototype+design+project+CMOS
+
+  - key: tools-flow
+    title: 工具与流程
+    items:
+      - name: 模拟IC设计自动化脚本
+        url: https://www.google.com/search?q=analog+IC+design+automation+script+Python
+      - name: 仿真数据处理与绘图
+        url: https://www.google.com/search?q=simulation+data+processing+plotting+Python+analog

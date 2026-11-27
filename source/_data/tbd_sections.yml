@@ -1,0 +1,23 @@
+# 质量页配置（/tbd/）
+# 布局与书籍页一致：多个子分类，每条只显示带链接的名字。
+
+reading_url: /tbd/quality-notes/
+
+sections:
+  - key: verification
+    title: 设计验证
+    items:
+      - name: 设计评审检查清单
+        url: https://www.google.com/search?q=analog+IC+design+review+checklist
+      - name: 仿真覆盖率与回归测试
+        url: https://www.google.com/search?q=simulation+coverage+regression+test+analog+IC
+      - name: 版图 DRC 与 LVS 检查
+        url: https://www.google.com/search?q=layout+DRC+LVS+verification+analog+IC
+
+  - key: quality-method
+    title: 质量方法
+    items:
+      - name: 失效模式与影响分析 FMEA
+        url: https://www.google.com/search?q=FMEA+failure+mode+effects+analysis+hardware+design
+      - name: 良率分析与统计工艺控制
+        url: https://www.google.com/search?q=yield+analysis+statistical+process+control+semiconductor
