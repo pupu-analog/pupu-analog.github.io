@@ -1,10 +1,10 @@
 # 书籍页的子分类配置
 # 每个分类渲染为一整行横向网格；卡片横向排列，宽度超出一行时自动换行。
-# 卡片格式：名字:读书整理
+# 条目格式：名字; 阅读整理（每条独占一行）
 #   - name        : 显示的名字，点击跳转到 url
 #   - url         : 名字要跳转的网址（站内路径或完整 http(s) 链接）
-#   - reading     : 冒号后的文字，默认「读书整理」
-#   - reading_url : 可选，读书整理文字的跳转网址；留空则只显示文字
+#   - reading     : 分号后的文字，默认「阅读整理」
+#   - reading_url : 可选，阅读整理文字的跳转网址；留空则只显示文字
 # 后续添加内容：在对应分类的 items 下追加一条即可，不需要改页面代码。
 # 新增分类：复制一个 - key: ... 块，改 key/title，追加到 sections 末尾。
 
@@ -14,11 +14,11 @@ sections:
     items:
       - name: 模拟电子技术基础
         url: /books/book1/
-        reading: 读书整理
+        reading: 阅读整理
         reading_url: /books/book1/
       - name: 模拟集成电路设计与仿真
         url: /books/book2/
-        reading: 读书整理
+        reading: 阅读整理
         reading_url: /books/book2/
 
   - key: converters
@@ -26,7 +26,7 @@ sections:
     items:
       - name: ADC 架构与设计
         url: /books/book3/
-        reading: 读书整理
+        reading: 阅读整理
         reading_url: /books/book3/
 
   - key: notes

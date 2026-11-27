@@ -16,9 +16,8 @@ function normalizeUrl(value) {
   return "/" + raw.replace(/^\/+/, "");
 }
 
-// 渲染书籍页：每个子分类 = 一整行横向网格。
-// 卡片格式：名字:读书整理（名字链接到 url，读书整理可选链接到 reading_url）。
-// 卡片自身保持单行、高度最窄，横向排不下时自动换行。
+// 渲染书籍页：每个子分类 = 一组条目，每条独占一行。
+// 条目格式：名字; 阅读整理（名字链接到 url，阅读整理可选链接到 reading_url）。
 // 数据源：source/_data/book_sections.yml
 hexo.extend.tag.register("book_sections", function () {
   var data = (hexo.locals.get("data") || {}).book_sections || {};
@@ -35,7 +34,7 @@ hexo.extend.tag.register("book_sections", function () {
     var cards = items.map(function (item) {
       var href = normalizeUrl(item.url);
       var name = escapeHtml(item.name || "未命名");
-      var reading = escapeHtml(item.reading == null ? "读书整理" : item.reading);
+      var reading = escapeHtml(item.reading == null ? "阅读整理" : item.reading);
       var readingHref = normalizeUrl(item.reading_url);
 
       var nameHtml = href
@@ -45,8 +44,8 @@ hexo.extend.tag.register("book_sections", function () {
         ? '<a class="bk-reading" href="' + escapeHtml(readingHref) + '">' + reading + "</a>"
         : '<span class="bk-reading">' + reading + "</span>";
 
-      return '<span class="bk-item">' + nameHtml +
-        '<span class="bk-colon">: </span>' + readingHtml + "</span>";
+      return '<div class="bk-item">' + nameHtml +
+        '<span class="bk-sep">; </span>' + readingHtml + "</div>";
     });
 
     return '<section class="bk-section">' +
