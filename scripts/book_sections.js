@@ -16,9 +16,8 @@ function normalizeUrl(value) {
   return "/" + raw.replace(/^\/+/, "");
 }
 
-// 渲染书籍页：每个子分类 = 一组条目，每条独占一行。
-// 条目格式：名字; 阅读整理
-//   名字链接到 url（外部资料页，如 IEEE 论文）；阅读整理链接到 reading_url（笔记 md 文件页）。
+// 渲染书籍页：每个子分类 = 一组条目，每条独占一行，只显示带链接的名字。
+// 页面末尾统一显示一个「阅读整理」入口，指向 reading_url（阅读整理汇总页）。
 // 数据源：source/_data/book_sections.yml
 hexo.extend.tag.register("book_sections", function () {
   var data = (hexo.locals.get("data") || {}).book_sections || {};
@@ -28,25 +27,19 @@ hexo.extend.tag.register("book_sections", function () {
     return '<p class="bk-empty">尚未配置子分类，请在 source/_data/book_sections.yml 中添加。</p>';
   }
 
-  return sections.map(function (section) {
+  var html = sections.map(function (section) {
     var title = escapeHtml(section.title || "未命名分类");
     var items = section.items || [];
 
     var cards = items.map(function (item) {
       var href = normalizeUrl(item.url);
       var name = escapeHtml(item.name || "未命名");
-      var reading = escapeHtml(item.reading == null ? "阅读整理" : item.reading);
-      var readingHref = normalizeUrl(item.reading_url);
 
-      var nameHtml = href
-        ? '<a class="bk-name" href="' + escapeHtml(href) + '">' + name + "</a>"
-        : '<span class="bk-name">' + name + "</span>";
-      var readingHtml = readingHref
-        ? '<a class="bk-reading" href="' + escapeHtml(readingHref) + '">' + reading + "</a>"
-        : '<span class="bk-reading">' + reading + "</span>";
-
-      return '<div class="bk-item">' + nameHtml +
-        '<span class="bk-sep">; </span>' + readingHtml + "</div>";
+      return '<div class="bk-item">' +
+        (href
+          ? '<a class="bk-name" href="' + escapeHtml(href) + '">' + name + "</a>"
+          : '<span class="bk-name">' + name + "</span>") +
+        "</div>";
     });
 
     return '<section class="bk-section">' +
@@ -54,4 +47,12 @@ hexo.extend.tag.register("book_sections", function () {
       (cards.length ? '<div class="bk-grid">' + cards.join("") + "</div>" : "") +
       "</section>";
   }).join("");
+
+  var readingHref = normalizeUrl(data.reading_url);
+  if (readingHref) {
+    html += '<div class="bk-reading-row"><a class="bk-reading" href="' +
+      escapeHtml(readingHref) + '">阅读整理</a></div>';
+  }
+
+  return html;
 }, { ends: false });

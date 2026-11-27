@@ -1,11 +1,11 @@
 # 书籍页的子分类配置
-# 每个分类 = 一组条目，每条独占一行。
-# 条目格式：名字; 阅读整理
-#   - name        : 显示的名字（名字链接到 url）
-#   - url         : 名字要跳转的网址（Google 搜索该书 PDF）
-#   - reading     : 分号后的文字，固定为「阅读整理」
-#   - reading_url : 「阅读整理」跳转到的笔记 md 页
+# 每个分类 = 一组条目，每条独占一行，只显示带链接的名字。
+#   - name : 显示的名字（名字链接到 url）
+#   - url  : 名字要跳转的网址（外部资料页 / Google PDF 搜索）
+# 页面末尾统一显示一个「阅读整理」入口，指向下面的 reading_url（阅读整理汇总页）。
 # 后续添加条目：在对应分类的 items 下追加一条即可，不需要改页面代码。
+
+reading_url: /books/reading-notes/
 
 sections:
   - key: foundations
@@ -13,165 +13,87 @@ sections:
     items:
       - name: "Analysis and Design of Analog Integrated Circuits 5th - Gray"
         url: "https://www.google.com/search?q=Analysis+and+Design+of+Analog+Integrated+Circuits+5th+Gray+pdf"
-        reading: 阅读整理
-        reading_url: /books/book1/
       - name: "Analog Integrated Circuit Design 2nd - Johns Martin"
         url: "https://www.google.com/search?q=Analog+Integrated+Circuit+Design+2nd+Johns+Martin+pdf"
-        reading: 阅读整理
-        reading_url: /books/book2/
       - name: "Design of Analog CMOS Integrated Circuits 2nd - Razavi"
         url: "https://www.google.com/search?q=Design+of+Analog+CMOS+Integrated+Circuits+2nd+Razavi+pdf"
-        reading: 阅读整理
-        reading_url: /books/book3/
       - name: "Analog Design Essentials - Sansen"
         url: "https://www.google.com/search?q=Analog+Design+Essentials+Sansen+pdf"
-        reading: 阅读整理
-        reading_url: /books/book4/
       - name: "CMOS Analog Circuit Design 3rd - Allen"
         url: "https://www.google.com/search?q=CMOS+Analog+Circuit+Design+3rd+Allen+pdf"
-        reading: 阅读整理
-        reading_url: /books/book5/
       - name: "Design of Analog Integrated Circuits and Systems - Laker Sansen"
         url: "https://www.google.com/search?q=Design+of+Analog+Integrated+Circuits+and+Systems+Laker+Sansen+pdf"
-        reading: 阅读整理
-        reading_url: /books/book6/
 
   - key: converters
     title: Analog circuits design 系列
     items:
       - name: "1993 - Operational Amplifiers, Analog to Digital Convertors, Analog Computer Aided Design"
         url: "https://www.google.com/search?q=1993+-+Operational+Amplifiers%2C+Analog+to+Digital+Convertors%2C+Analog+Computer+Aided+Design+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-1993/
       - name: "1994 - Mixed-Mode A/D Design, Sensor Interfaces, Communication Circuits"
         url: "https://www.google.com/search?q=1994+-+Mixed-Mode+A%2FD+Design%2C+Sensor+Interfaces%2C+Communication+Circuits+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-1994/
       - name: "1995 - Low-Power Low-Voltage Integrated Filters, Smart Power"
         url: "https://www.google.com/search?q=1995+-+Low-Power+Low-Voltage+Integrated+Filters%2C+Smart+Power+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-1995/
       - name: "1996 - Mixed-Mode with CAD Tools, Voltage, Current and Time References"
         url: "https://www.google.com/search?q=1996+-+Mixed-Mode+with+CAD+Tools%2C+Voltage%2C+Current+and+Time+References+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-1996/
       - name: "1997 - RF CMOS Circuit Design, Bandpass Sigma Delta and Other Data Converters, Translinear Circuits, Low-Noise/Power/Voltage"
         url: "https://www.google.com/search?q=1997+-+RF+CMOS+Circuit+Design%2C+Bandpass+Sigma+Delta+and+Other+Data+Converters%2C+Translinear+Circuits%2C+Low-Noise%2FPower%2FVoltage+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-1997/
       - name: "1998 - RF A/D Converters, Sensor and Actuator Interfaces, Low-Noise Oscillators, PLLs and Synthesizers"
         url: "https://www.google.com/search?q=1998+-+RF+A%2FD+Converters%2C+Sensor+and+Actuator+Interfaces%2C+Low-Noise+Oscillators%2C+PLLs+and+Synthesizers+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-1998/
       - name: "1999 - 1-Volt Electronics, Mixed-Mode Systems, LNAs and RF Power Amplifiers for Telecom"
         url: "https://www.google.com/search?q=1999+-+1-Volt+Electronics%2C+Mixed-Mode+Systems%2C+LNAs+and+RF+Power+Amplifiers+for+Telecom+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-1999/
       - name: "2000 - XDSL and other Communication Systems, RF-MOST Models and Behavioural Modelling, Integrated Filters and Oscillators"
         url: "https://www.google.com/search?q=2000+-+XDSL+and+other+Communication+Systems%2C+RF-MOST+Models+and+Behavioural+Modelling%2C+Integrated+Filters+and+Oscillators+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2000/
       - name: "2001 - High-Speed Analog-to-Digital Converters, Mixed-Signal Design, PLLs and Synthesizers"
         url: "https://www.google.com/search?q=2001+-+High-Speed+Analog-to-Digital+Converters%2C+Mixed-Signal+Design%2C+PLLs+and+Synthesizers+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2001/
       - name: "2002 - Scalable Analog Circuits, High-Speed D/A Converters, RF Power Amplifiers"
         url: "https://www.google.com/search?q=2002+-+Scalable+Analog+Circuits%2C+High-Speed+D%2FA+Converters%2C+RF+Power+Amplifiers+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2002/
       - name: "2003 - Structured Mixed-Mode Design, Multi-Bit Sigma-Delta Converters, Short-Range RF Circuits"
         url: "https://www.google.com/search?q=2003+-+Structured+Mixed-Mode+Design%2C+Multi-Bit+Sigma-Delta+Converters%2C+Short-Range+RF+Circuits+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2003/
       - name: "2004 - Fractional-N Synthesizers, Design for Robustness, Line and Bus Drivers"
         url: "https://www.google.com/search?q=2004+-+Fractional-N+Synthesizers%2C+Design+for+Robustness%2C+Line+and+Bus+Drivers+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2004/
       - name: "2005 - Sensor and Actuator Interface Electronics, Integrated High-Voltage Electronics and Power Management, Low-Power and High-Resolution ADCs"
         url: "https://www.google.com/search?q=2005+-+Sensor+and+Actuator+Interface+Electronics%2C+Integrated+High-Voltage+Electronics+and+Power+Management%2C+Low-Power+and+High-Resolution+ADCs+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2005/
       - name: "2006 - RF Circuits: Wide Band, Front-Ends, DACs, Design Methodology and Verification of RF and Mixed-Signal Systems, Low Power and Low Voltage"
         url: "https://www.google.com/search?q=2006+-+RF+Circuits%3A+Wide+Band%2C+Front-Ends%2C+DACs%2C+Design+Methodology+and+Verification+of+RF+and+Mixed-Signal+Systems%2C+Low+Power+and+Low+Voltage+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2006/
       - name: "2007 - High-Speed A-D Converters, Automotive Electronics and Ultra-Low Power Wireless"
         url: "https://www.google.com/search?q=2007+-+High-Speed+A-D+Converters%2C+Automotive+Electronics+and+Ultra-Low+Power+Wireless+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2007/
       - name: "2008 - Sensors, Actuators and Power Drivers for the Automotive and Industrial Environment, Integrated PAs from Wireline to RF, Very High Frequency Front Ends"
         url: "https://www.google.com/search?q=2008+-+Sensors%2C+Actuators+and+Power+Drivers+for+the+Automotive+and+Industrial+Environment%2C+Integrated+PAs+from+Wireline+to+RF%2C+Very+High+Frequency+Front+Ends+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2008/
       - name: "2009 - High-speed Clock and Data Recovery, High-performance Amplifiers, Power Management"
         url: "https://www.google.com/search?q=2009+-+High-speed+Clock+and+Data+Recovery%2C+High-performance+Amplifiers%2C+Power+Management+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2009/
       - name: "2010 - Smart Data Converters, Filters on Chip, Multimode Transmitters"
         url: "https://www.google.com/search?q=2010+-+Smart+Data+Converters%2C+Filters+on+Chip%2C+Multimode+Transmitters+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2010/
       - name: "2011 - Robust Design, Sigma Delta Converters, RFID"
         url: "https://www.google.com/search?q=2011+-+Robust+Design%2C+Sigma+Delta+Converters%2C+RFID+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2011/
       - name: "2012 - Low-Voltage Low-Power Data Converters, Short-Range Wireless Front-Ends, Power Management and DC-DC Converters"
         url: "https://www.google.com/search?q=2012+-+Low-Voltage+Low-Power+Data+Converters%2C+Short-Range+Wireless+Front-Ends%2C+Power+Management+and+DC-DC+Converters+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2012/
       - name: "2013 - Nyquist AD Converters, Sensor Interfaces and Robustness"
         url: "https://www.google.com/search?q=2013+-+Nyquist+AD+Converters%2C+Sensor+Interfaces+and+Robustness+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2013/
       - name: "2014 - Frequency References, Power Management for SoC, and Smart Wireless Interfaces"
         url: "https://www.google.com/search?q=2014+-+Frequency+References%2C+Power+Management+for+SoC%2C+and+Smart+Wireless+Interfaces+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2014/
       - name: "2015 - High-Performance AD and DA Converters, IC Design in Scaled Technologies, and Time-Domain Signal Processing"
         url: "https://www.google.com/search?q=2015+-+High-Performance+AD+and+DA+Converters%2C+IC+Design+in+Scaled+Technologies%2C+and+Time-Domain+Signal+Processing+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2015/
       - name: "2016 - Efficient Sensor Interfaces, Advanced Amplifiers and Low Power RF Systems"
         url: "https://www.google.com/search?q=2016+-+Efficient+Sensor+Interfaces%2C+Advanced+Amplifiers+and+Low+Power+RF+Systems+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2016/
       - name: "2017 - Wideband Continuous-time Sigma-Delta ADCs, Automotive Electronics, and Power Management"
         url: "https://www.google.com/search?q=2017+-+Wideband+Continuous-time+Sigma-Delta+ADCs%2C+Automotive+Electronics%2C+and+Power+Management+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2017/
       - name: "2018 - Hybrid ADCs, Smart Sensors for the IoT, and Sub-1V and Advanced Node Analog Circuit Design"
         url: "https://www.google.com/search?q=2018+-+Hybrid+ADCs%2C+Smart+Sensors+for+the+IoT%2C+and+Sub-1V+and+Advanced+Node+Analog+Circuit+Design+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2018/
       - name: "2019 - Low-Power Analog Techniques, Sensors for Mobile Devices, and Energy Efficient Amplifiers"
         url: "https://www.google.com/search?q=2019+-+Low-Power+Analog+Techniques%2C+Sensors+for+Mobile+Devices%2C+and+Energy+Efficient+Amplifiers+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2019/
       - name: "2020 - Next-Generation ADCs, High-Performance Power Management, and Technology Considerations for Advanced Integrated Circuits"
         url: "https://www.google.com/search?q=2020+-+Next-Generation+ADCs%2C+High-Performance+Power+Management%2C+and+Technology+Considerations+for+Advanced+Integrated+Circuits+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2020/
       - name: "2022 - Analog Circuits for Machine Learning, Current/Voltage/Temperature Sensors, and High-speed Communication"
         url: "https://www.google.com/search?q=2022+-+Analog+Circuits+for+Machine+Learning%2C+Current%2FVoltage%2FTemperature+Sensors%2C+and+High-speed+Communication+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2022/
       - name: "2023 - Biomedical Electronics, Noise Shaping ADCs, and Frequency References"
         url: "https://www.google.com/search?q=2023+-+Biomedical+Electronics%2C+Noise+Shaping+ADCs%2C+and+Frequency+References+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2023/
       - name: "2025 - Imaging Sensors, Power Management, PLLs and Frequency Synthesizers"
         url: "https://www.google.com/search?q=2025+-+Imaging+Sensors%2C+Power+Management%2C+PLLs+and+Frequency+Synthesizers+pdf"
-        reading: 阅读整理
-        reading_url: /books/aacd-2025/
 
   - key: notes
     title: 子分类三
     items:
       - name: 模拟集成电路设计与仿真
         url: https://example.com/papers/analog-ic-design
-        reading: 阅读整理
-        reading_url: /books/analog-simulation/
       - name: ADC 架构与设计
         url: https://example.com/papers/adc-architecture
-        reading: 阅读整理
-        reading_url: /books/adc-architecture/

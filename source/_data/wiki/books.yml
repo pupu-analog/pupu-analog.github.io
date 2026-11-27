@@ -8,6 +8,7 @@ navigation:
   tree:
     '总览':
       - index
+      - reading-notes
     '模拟书籍':
       - book1
       - book2
