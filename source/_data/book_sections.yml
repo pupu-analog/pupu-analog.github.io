@@ -1,9 +1,10 @@
 # 书籍页的子分类配置
 # 每个分类 = 一组条目，每条独占一行。
 # 条目格式：名字; 阅读整理
-#   - name : 名字，点击跳转到 url（你预设的网址：站内路径或完整 http(s) 链接）
-#   - url  : 名字要跳转的网址
-#   - reading : 分号后的内容——「阅读整理」是你要写的文字，将来直接写在这里，不是链接
+#   - name        : 显示的名字（书名或论文标题），点击跳转到 url
+#   - url         : 名字要跳转的网址，如 IEEE 论文页、书籍介绍页等外部网站
+#   - reading     : 分号后的显示文字，固定为「阅读整理」
+#   - reading_url : 点击「阅读整理」跳转到的笔记 md 文件页面（阅读笔记写在那个文件里）
 # 后续添加条目：在对应分类的 items 下追加一条即可，不需要改页面代码。
 # 新增分类：复制一个 - key: ... 块，改 key/title，追加到 sections 末尾。
 
@@ -12,18 +13,21 @@ sections:
     title: 子分类一
     items:
       - name: 模拟电子技术基础
-        url: /books/book1/
+        url: https://example.com/papers/analog-electronics
         reading: 阅读整理
+        reading_url: /books/book1/
       - name: 模拟集成电路设计与仿真
-        url: /books/book2/
+        url: https://example.com/papers/analog-ic-design
         reading: 阅读整理
+        reading_url: /books/book2/
 
   - key: converters
     title: 子分类二
     items:
       - name: ADC 架构与设计
-        url: /books/book3/
+        url: https://example.com/papers/adc-architecture
         reading: 阅读整理
+        reading_url: /books/book3/
 
   - key: notes
     title: 子分类三

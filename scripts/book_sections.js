@@ -17,7 +17,8 @@ function normalizeUrl(value) {
 }
 
 // 渲染书籍页：每个子分类 = 一组条目，每条独占一行。
-// 条目格式：名字; 阅读整理（仅名字链接到 url；阅读整理是内容文字，不是链接）。
+// 条目格式：名字; 阅读整理
+//   名字链接到 url（外部资料页，如 IEEE 论文）；阅读整理链接到 reading_url（笔记 md 文件页）。
 // 数据源：source/_data/book_sections.yml
 hexo.extend.tag.register("book_sections", function () {
   var data = (hexo.locals.get("data") || {}).book_sections || {};
@@ -34,12 +35,15 @@ hexo.extend.tag.register("book_sections", function () {
     var cards = items.map(function (item) {
       var href = normalizeUrl(item.url);
       var name = escapeHtml(item.name || "未命名");
-      var reading = escapeHtml(item.reading == null ? "" : item.reading);
+      var reading = escapeHtml(item.reading == null ? "阅读整理" : item.reading);
+      var readingHref = normalizeUrl(item.reading_url);
 
       var nameHtml = href
         ? '<a class="bk-name" href="' + escapeHtml(href) + '">' + name + "</a>"
         : '<span class="bk-name">' + name + "</span>";
-      var readingHtml = reading ? '<span class="bk-reading">' + reading + "</span>" : "";
+      var readingHtml = readingHref
+        ? '<a class="bk-reading" href="' + escapeHtml(readingHref) + '">' + reading + "</a>"
+        : '<span class="bk-reading">' + reading + "</span>";
 
       return '<div class="bk-item">' + nameHtml +
         '<span class="bk-sep">; </span>' + readingHtml + "</div>";
