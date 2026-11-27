@@ -8,10 +8,15 @@ navigation:
   tree:
     '总览':
       - index
-    '模拟设计':
+    '模拟书籍':
       - book1
       - book2
-    'ADC':
       - book3
+      - book4
+      - book5
+      - book6
+    '其它主题':
+      - analog-simulation
+      - adc-architecture
 listing:
   order: 1

@@ -1,8 +1,8 @@
 # 书籍页的子分类配置
 # 每个分类 = 一组条目，每条独占一行。
 # 条目格式：名字; 阅读整理
-#   - name        : 显示的名字（书名或论文标题），点击跳转到 url
-#   - url         : 名字要跳转的网址（这里用 Google 搜索该书 PDF 的链接）
+#   - name        : 显示的名字（书名 版次 - 作者，与条目1格式统一），点击跳转到 url
+#   - url         : 名字要跳转的网址（Google 搜索该书 PDF 的链接）
 #   - reading     : 分号后的显示文字，固定为「阅读整理」
 #   - reading_url : 点击「阅读整理」跳转到的笔记 md 文件页面，阅读笔记写在那个文件里
 # 后续添加条目：在对应分类的 items 下追加一条即可，不需要改页面代码。
@@ -16,19 +16,39 @@ sections:
         url: https://www.google.com/search?q=Analysis+and+Design+of+Analog+Integrated+Circuits+5th+Gray+pdf
         reading: 阅读整理
         reading_url: /books/book1/
-      - name: 模拟集成电路设计与仿真
-        url: https://example.com/papers/analog-ic-design
+      - name: Analog Integrated Circuit Design 2nd - Johns Martin
+        url: https://www.google.com/search?q=Analog+Integrated+Circuit+Design+2nd+Johns+Martin+pdf
         reading: 阅读整理
         reading_url: /books/book2/
+      - name: Design of Analog CMOS Integrated Circuits 2nd - Razavi
+        url: https://www.google.com/search?q=Design+of+Analog+CMOS+Integrated+Circuits+2nd+Razavi+pdf
+        reading: 阅读整理
+        reading_url: /books/book3/
+      - name: Analog Design Essentials - Sansen
+        url: https://www.google.com/search?q=Analog+Design+Essentials+Sansen+pdf
+        reading: 阅读整理
+        reading_url: /books/book4/
+      - name: CMOS Analog Circuit Design 3rd - Allen
+        url: https://www.google.com/search?q=CMOS+Analog+Circuit+Design+3rd+Allen+pdf
+        reading: 阅读整理
+        reading_url: /books/book5/
+      - name: Design of Analog Integrated Circuits and Systems - Laker Sansen
+        url: https://www.google.com/search?q=Design+of+Analog+Integrated+Circuits+and+Systems+Laker+Sansen+pdf
+        reading: 阅读整理
+        reading_url: /books/book6/
 
   - key: converters
     title: 子分类二
     items:
-      - name: ADC 架构与设计
-        url: https://example.com/papers/adc-architecture
+      - name: 模拟集成电路设计与仿真
+        url: https://example.com/papers/analog-ic-design
         reading: 阅读整理
-        reading_url: /books/book3/
+        reading_url: /books/analog-simulation/
 
   - key: notes
     title: 子分类三
-    items: []
+    items:
+      - name: ADC 架构与设计
+        url: https://example.com/papers/adc-architecture
+        reading: 阅读整理
+        reading_url: /books/adc-architecture/
