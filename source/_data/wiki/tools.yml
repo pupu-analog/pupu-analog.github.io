@@ -9,5 +9,6 @@ navigation:
     '总览':
       - index
       - simulation-notes
+      - site-guide
 listing:
   order: 6
