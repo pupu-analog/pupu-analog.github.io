@@ -1,0 +1,11 @@
+# 数学页配置（/math/）
+# 布局与书籍页一致：每个分类一组条目，每条独占一行；条目可选 reading / reading_url 追加「阅读整理」。
+
+sections:
+  - key: math-basics
+    title: 数学基础
+    items:
+      - name: "微积分与级数"
+        url: "https://www.google.com/search?q=calculus+series+mathematics"
+      - name: "线性代数"
+        url: "https://www.google.com/search?q=linear+algebra+mathematics"

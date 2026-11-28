@@ -1,0 +1,11 @@
+# 英语页配置（/english/）
+# 布局与书籍页一致：每个分类一组条目，每条独占一行；条目可选 reading / reading_url 追加「阅读整理」。
+
+sections:
+  - key: english-basics
+    title: 英语基础
+    items:
+      - name: "技术英语词汇"
+        url: "https://www.google.com/search?q=technical+English+vocabulary+electronics"
+      - name: "论文写作表达"
+        url: "https://www.google.com/search?q=technical+paper+writing+English"

@@ -1,0 +1,12 @@
+name: 数学
+headline: 数学
+tagline: 数学基础与工具
+description: 整理数学基础、公式推导与计算工具相关资料。
+route:
+  path: /math/
+navigation:
+  tree:
+    '总览':
+      - index
+listing:
+  order: 10

@@ -1,0 +1,12 @@
+name: Layout
+headline: Layout
+tagline: 版图设计经验
+description: 整理 Layout 版图设计相关资料与实践经验。
+route:
+  path: /layout/
+navigation:
+  tree:
+    '总览':
+      - index
+listing:
+  order: 8

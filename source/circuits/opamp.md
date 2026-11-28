@@ -1,9 +1,12 @@
 ---
-title: 运放设计专题
-date: 2026-11-27
+title: "运放设计专题"
+date: 2026-11-28
 collection:
   profile: wiki
   id: circuits
+active_menu: circuits
 ---
 
-{% block_topic opamp %}
+<div class="guide-home">
+  {% block_topic opamp %}
+</div>

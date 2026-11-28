@@ -16,8 +16,9 @@ function normalizeUrl(value) {
   return "/" + raw.replace(/^\/+/, "");
 }
 
-// 渲染 topic 页：与书籍页布局一致，多个子分类，每条只显示带链接的名字。
-// 页面末尾统一显示一个「阅读整理」入口，指向 reading_url。
+// 渲染 topic 页：每个子分类 = 左列 items（外部资料链接）+ 右列 topics（topic 落地页）。
+// 左列 items  : 每行一个条目，名字链接到 url
+// 右列 topics : 每行一个 topic，名字链接到 /topic/<id>/ 落地页
 // 数据源：source/_data/topic_sections.yml
 hexo.extend.tag.register("topic_sections", function () {
   var data = (hexo.locals.get("data") || {}).topic_sections || {};
@@ -29,7 +30,7 @@ hexo.extend.tag.register("topic_sections", function () {
 
   var html = sections.map(function (section) {
     var title = escapeHtml(section.title || "未命名分类");
-    var cards = (section.items || []).map(function (item) {
+    var items = (section.items || []).map(function (item) {
       var href = normalizeUrl(item.url);
       var name = escapeHtml(item.name || "未命名");
       return '<div class="bk-item">' +
@@ -39,17 +40,25 @@ hexo.extend.tag.register("topic_sections", function () {
         "</div>";
     }).join("");
 
+    var topics = (section.topics || []).map(function (topic) {
+      var id = String(topic.id || "").trim();
+      var name = escapeHtml(topic.name || id || "未命名 topic");
+      var href = id ? "/topic/" + encodeURIComponent(id) + "/" : "";
+      return '<div class="bk-item">' +
+        (href
+          ? '<a class="bk-name" href="' + escapeHtml(href) + '">' + name + "</a>"
+          : '<span class="bk-name">' + name + "</span>") +
+        "</div>";
+    }).join("");
+
     return '<section class="bk-section">' +
       '<h2 class="bk-section-title">' + title + "</h2>" +
-      (cards ? '<div class="bk-grid">' + cards + "</div>" : "") +
+      '<div class="bk-two-col">' +
+        '<div class="bk-col">' + (items || '<span class="bk-empty">暂无条目</span>') + "</div>" +
+        '<div class="bk-col">' + (topics || '<span class="bk-empty">暂无 topic</span>') + "</div>" +
+      "</div>" +
       "</section>";
   }).join("");
-
-  var readingHref = normalizeUrl(data.reading_url);
-  if (readingHref) {
-    html += '<div class="bk-reading-row"><a class="bk-reading" href="' +
-      escapeHtml(readingHref) + '">阅读整理</a></div>';
-  }
 
   return html;
 }, { ends: false });

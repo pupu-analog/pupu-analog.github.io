@@ -10,7 +10,7 @@ comments:
 
 ## 结构
 
-Hexo 8 + Stellar 2 静态站，GitHub Pages 自动发布。7 个集合栏目 + 博客时间线（`/blog/`）。栏目页是数据驱动的清单，笔记正文在独立 md 页。
+Hexo 8 + Stellar 2 静态站，GitHub Pages 自动发布。11 个集合栏目 + 博客时间线（`/blog/`）。栏目页是数据驱动的清单，笔记正文在独立 md 页。
 
 ## 常改文件
 
@@ -31,7 +31,7 @@ Hexo 8 + Stellar 2 静态站，GitHub Pages 自动发布。7 个集合栏目 + �
 
 ## 容量
 
-仓库 0.12 MB / 1 GB（约 0.01%）；`public/`、`node_modules/` 不计入。图片放 `source/images/`，控制大小。
+仓库约 0.34 MB / 1 GB（约 0.03%）；`public/`、`node_modules/` 不计入。图片放 `source/images/`，控制大小。
 
 ## 注意
 

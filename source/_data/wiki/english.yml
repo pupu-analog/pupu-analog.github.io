@@ -1,0 +1,12 @@
+name: 英语
+headline: 英语
+tagline: 英语学习与资料
+description: 整理英语学习、技术写作与阅读资料。
+route:
+  path: /english/
+navigation:
+  tree:
+    '总览':
+      - index
+listing:
+  order: 11

@@ -28,6 +28,12 @@ topbar:
     - id: device-process
       title: 器件工艺
       url: /device-process/
+    - id: layout
+      title: Layout
+      url: /layout/
+    - id: package
+      title: 封装
+      url: /package/
     - id: topic
       title: topic
       url: /topic/
@@ -40,6 +46,12 @@ topbar:
     - id: quality
       title: 质量
       url: /quality/
+    - id: math
+      title: 数学
+      url: /math/
+    - id: english
+      title: 英语
+      url: /english/
   widgets: [spacer, menu, settings]
 
 # 首页单独覆盖，确保顶栏在根路径显示
@@ -51,6 +63,9 @@ profiles:
   blog_index:
     listing_nav:
       enabled: false
+  # topic 专栏系统的索引路径让给 wiki 集合 /topic/，改到 /columns/
+  topic:
+    path: /columns/
 
 # 页脚身份与导航
 footer:
@@ -64,12 +79,16 @@ footer:
         - '[书籍](/books/)'
         - '[电路](/circuits/)'
         - '[器件工艺](/device-process/)'
+        - '[Layout](/layout/)'
+        - '[封装](/package/)'
         - '[topic](/topic/)'
         - '[项目](/projects/)'
     - title: 更多
       items:
         - '[仿真](/simulation/)'
         - '[质量](/quality/)'
+        - '[数学](/math/)'
+        - '[英语](/english/)'
         - '[GitHub](https://github.com/pupu-analog)'
 
 # SEO

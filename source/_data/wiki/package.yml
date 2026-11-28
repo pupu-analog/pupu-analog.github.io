@@ -1,0 +1,12 @@
+name: 封装
+headline: 封装
+tagline: 芯片封装与可靠性
+description: 整理芯片封装、可靠性与封装设计相关资料。
+route:
+  path: /package/
+navigation:
+  tree:
+    '总览':
+      - index
+listing:
+  order: 9

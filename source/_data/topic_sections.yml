@@ -1,39 +1,103 @@
 # topic 页配置（/topic/）
-# 布局与书籍页一致：多个子分类，每个分类包含多个条目，每条只显示带链接的名字。
-#   - name : 显示的名字（名字链接到 url）
-#   - url  : 名字要跳转的网址（外部资料页 / Google 搜索）
-# 页面末尾统一显示一个「阅读整理」入口，指向下面的 reading_url。
-# 后续添加：在对应分类的 items 下追加即可；新增分类则复制一个 section 块。
-
-reading_url: /topic/topic-notes/
+# 每个子分类下方竖向分成两列：第一列 items（外部资料链接），第二列 topics（topic 落地页）。
+#   - items  : name + url（名字链接到外部资料页 / Google 搜索）
+#   - topics : name + id（名字链接到 /topic/<id>/ 落地页）
+# 后续添加：在对应分类的 items / topics 下追加即可；新增分类则复制一个 section 块。
 
 sections:
-  - key: analog-basics
-    title: 模拟基础
+  - key: circuit-techniques
+    title: 电路技术
     items:
-      - name: 运算放大器基础
-        url: https://www.google.com/search?q=operational+amplifier+fundamentals+analog+CMOS
-      - name: 电流镜与偏置网络
-        url: https://www.google.com/search?q=current+mirror+biasing+network+analog+CMOS
-      - name: 带隙基准与温度补偿
-        url: https://www.google.com/search?q=bandgap+reference+temperature+compensation+analog+CMOS
+      - name: 模拟电路设计技术汇总
+        url: https://www.google.com/search?q=analog+circuit+design+techniques+CMOS
+    topics:
+      - name: 负反馈控制
+        id: negative-feedback
+      - name: DEM
+        id: dem
+      - name: Auto-Zero
+        id: auto-zero
+      - name: Chopper
+        id: chopper
+      - name: Σ-Δ
+        id: sigma-delta
+      - name: Switch-Capacitor
+        id: switch-capacitor
+      - name: Switch-Resistor
+        id: switch-resistor
+      - name: Charge-Pump
+        id: charge-pump
+      - name: PWM & PFM Modulation
+        id: pwm-pfm-modulation
+      - name: Dither
+        id: dither
+      - name: Incremental
+        id: incremental
+      - name: Burst
+        id: burst
 
-  - key: data-converters
-    title: 数据转换器
+  - key: thermal
+    title: 芯片的热
     items:
-      - name: SAR ADC 架构
-        url: https://www.google.com/search?q=SAR+ADC+architecture+analog+CMOS
-      - name: Sigma-Delta 调制器
-        url: https://www.google.com/search?q=sigma+delta+modulator+ADC+analog+CMOS
-      - name: 流水线 ADC
-        url: https://www.google.com/search?q=pipelined+ADC+architecture+analog+CMOS
+      - name: 热设计与温度效应
+        url: https://www.google.com/search?q=thermal+design+temperature+effects+IC+analog
+    topics:
+      - name: TSOA
+        id: tsoa
+      - name: OTSD & thermal Swing
+        id: otsd-thermal-swing
+      - name: 带载能力、OC clamp、OV 箝位
+        id: load-capability-oc-ov-clamp
 
-  - key: rf-clock
-    title: 射频与时钟
+  - key: emc
+    title: EMC
     items:
-      - name: 锁相环 PLL
-        url: https://www.google.com/search?q=phase+locked+loop+PLL+analog+CMOS+design
-      - name: 低噪声放大器 LNA
-        url: https://www.google.com/search?q=low+noise+amplifier+LNA+analog+CMOS+design
-      - name: 压控振荡器 VCO
-        url: https://www.google.com/search?q=voltage+controlled+oscillator+VCO+analog+CMOS+design
+      - name: 电磁兼容与抗干扰设计
+        url: https://www.google.com/search?q=EMC+electromagnetic+compatibility+IC+design
+    topics:
+      - name: EMI & DPI & PTI
+        id: emi-dpi-pti
+      - name: 测试和仿真
+        id: emc-test-simulation
+      - name: 设计注意
+        id: emc-design-notes
+
+  - key: esd
+    title: ESD
+    items:
+      - name: 静电放电防护设计
+        url: https://www.google.com/search?q=ESD+protection+circuit+design+CMOS
+    topics:
+      - name: ESD
+        id: esd
+
+  - key: latch-up
+    title: Latch-Up
+    items:
+      - name: 闩锁效应与防护
+        url: https://www.google.com/search?q=latch+up+CMOS+prevention+design
+    topics:
+      - name: Latch-Up
+        id: latch-up
+
+  - key: ground
+    title: 芯片的地
+    items:
+      - name: 接地与衬底噪声
+        url: https://www.google.com/search?q=grounding+substrate+noise+analog+IC+design
+    topics:
+      - name: Guard Ring
+        id: guard-ring
+      - name: Star-Routing
+        id: star-routing
+      - name: 屏蔽线 & Sense线
+        id: shielding-sense-line
+
+  - key: short-circuit-protection
+    title: 短路保护
+    items:
+      - name: 短路与过流保护电路
+        url: https://www.google.com/search?q=short+circuit+overcurrent+protection+circuit+design
+    topics:
+      - name: 短路保护
+        id: short-circuit-protection

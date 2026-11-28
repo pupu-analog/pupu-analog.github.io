@@ -1,0 +1,340 @@
+# Topic 落地页配置（与书籍页布局一致：多个子分类，每个分类多个条目）
+# topic id 对应 source/topic/<id>.md 页面。
+
+topics:
+
+  negative-feedback:
+    title: "负反馈控制"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "负反馈控制 基本原理"
+            url: "https://www.google.com/search?q=negative+feedback+control+analog+CMOS+basics"
+          - name: "负反馈控制 关键参数"
+            url: "https://www.google.com/search?q=negative+feedback+control+analog+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "负反馈控制 设计实例"
+            url: "https://www.google.com/search?q=negative+feedback+control+analog+CMOS+design+example"
+
+  dem:
+    title: "DEM"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "动态元素匹配 DEM 基本原理"
+            url: "https://www.google.com/search?q=dynamic+element+matching+DEM+analog+basics"
+          - name: "动态元素匹配 DEM 关键参数"
+            url: "https://www.google.com/search?q=dynamic+element+matching+DEM+analog+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "动态元素匹配 DEM 设计实例"
+            url: "https://www.google.com/search?q=dynamic+element+matching+DEM+analog+design+example"
+
+  auto-zero:
+    title: "Auto-Zero"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "自动调零 Auto-Zero 基本原理"
+            url: "https://www.google.com/search?q=auto+zero+offset+cancellation+analog+CMOS+basics"
+          - name: "自动调零 Auto-Zero 关键参数"
+            url: "https://www.google.com/search?q=auto+zero+offset+cancellation+analog+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "自动调零 Auto-Zero 设计实例"
+            url: "https://www.google.com/search?q=auto+zero+offset+cancellation+analog+CMOS+design+example"
+
+  chopper:
+    title: "Chopper"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "斩波 Chopper 基本原理"
+            url: "https://www.google.com/search?q=chopper+stabilization+amplifier+analog+CMOS+basics"
+          - name: "斩波 Chopper 关键参数"
+            url: "https://www.google.com/search?q=chopper+stabilization+amplifier+analog+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "斩波 Chopper 设计实例"
+            url: "https://www.google.com/search?q=chopper+stabilization+amplifier+analog+CMOS+design+example"
+
+  sigma-delta:
+    title: "Σ-Δ"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "Σ-Δ 调制 基本原理"
+            url: "https://www.google.com/search?q=sigma+delta+modulation+analog+CMOS+basics"
+          - name: "Σ-Δ 调制 关键参数"
+            url: "https://www.google.com/search?q=sigma+delta+modulation+analog+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "Σ-Δ 调制 设计实例"
+            url: "https://www.google.com/search?q=sigma+delta+modulation+analog+CMOS+design+example"
+
+  switch-capacitor:
+    title: "Switch-Capacitor"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "开关电容 Switch-Capacitor 基本原理"
+            url: "https://www.google.com/search?q=switched+capacitor+circuit+analog+CMOS+basics"
+          - name: "开关电容 Switch-Capacitor 关键参数"
+            url: "https://www.google.com/search?q=switched+capacitor+circuit+analog+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "开关电容 Switch-Capacitor 设计实例"
+            url: "https://www.google.com/search?q=switched+capacitor+circuit+analog+CMOS+design+example"
+
+  switch-resistor:
+    title: "Switch-Resistor"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "开关电阻 Switch-Resistor 基本原理"
+            url: "https://www.google.com/search?q=switched+resistor+circuit+analog+CMOS+basics"
+          - name: "开关电阻 Switch-Resistor 关键参数"
+            url: "https://www.google.com/search?q=switched+resistor+circuit+analog+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "开关电阻 Switch-Resistor 设计实例"
+            url: "https://www.google.com/search?q=switched+resistor+circuit+analog+CMOS+design+example"
+
+  charge-pump:
+    title: "Charge-Pump"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "电荷泵 Charge-Pump 基本原理"
+            url: "https://www.google.com/search?q=charge+pump+circuit+CMOS+design+basics"
+          - name: "电荷泵 Charge-Pump 关键参数"
+            url: "https://www.google.com/search?q=charge+pump+circuit+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "电荷泵 Charge-Pump 设计实例"
+            url: "https://www.google.com/search?q=charge+pump+circuit+CMOS+design+design+example"
+
+  pwm-pfm-modulation:
+    title: "PWM&PFM Modulation"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "PWM/PFM 调制 基本原理"
+            url: "https://www.google.com/search?q=PWM+PFM+modulation+DC+DC+converter+basics"
+          - name: "PWM/PFM 调制 关键参数"
+            url: "https://www.google.com/search?q=PWM+PFM+modulation+DC+DC+converter+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "PWM/PFM 调制 设计实例"
+            url: "https://www.google.com/search?q=PWM+PFM+modulation+DC+DC+converter+design+example"
+
+  dither:
+    title: "Dither"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "抖动 Dither 基本原理"
+            url: "https://www.google.com/search?q=dither+technique+ADC+analog+CMOS+basics"
+          - name: "抖动 Dither 关键参数"
+            url: "https://www.google.com/search?q=dither+technique+ADC+analog+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "抖动 Dither 设计实例"
+            url: "https://www.google.com/search?q=dither+technique+ADC+analog+CMOS+design+example"
+
+  incremental:
+    title: "Incremental"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "增量式 Incremental 基本原理"
+            url: "https://www.google.com/search?q=incremental+ADC+sigma+delta+analog+CMOS+basics"
+          - name: "增量式 Incremental 关键参数"
+            url: "https://www.google.com/search?q=incremental+ADC+sigma+delta+analog+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "增量式 Incremental 设计实例"
+            url: "https://www.google.com/search?q=incremental+ADC+sigma+delta+analog+CMOS+design+example"
+
+  burst:
+    title: "Burst"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "突发模式 Burst 基本原理"
+            url: "https://www.google.com/search?q=burst+mode+operation+DC+DC+converter+basics"
+          - name: "突发模式 Burst 关键参数"
+            url: "https://www.google.com/search?q=burst+mode+operation+DC+DC+converter+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "突发模式 Burst 设计实例"
+            url: "https://www.google.com/search?q=burst+mode+operation+DC+DC+converter+design+example"
+
+  tsoa:
+    title: "TSOA"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "TSOA 热安全操作区 基本原理"
+            url: "https://www.google.com/search?q=thermal+safe+operating+area+TSOA+IC+basics"
+          - name: "TSOA 热安全操作区 关键参数"
+            url: "https://www.google.com/search?q=thermal+safe+operating+area+TSOA+IC+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "TSOA 热安全操作区 设计实例"
+            url: "https://www.google.com/search?q=thermal+safe+operating+area+TSOA+IC+design+example"
+
+  otsd-thermal-swing:
+    title: "OTSD & thermal Swing"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "OTSD 与热摆幅 基本原理"
+            url: "https://www.google.com/search?q=over+temperature+shutdown+thermal+swing+IC+design+basics"
+          - name: "OTSD 与热摆幅 关键参数"
+            url: "https://www.google.com/search?q=over+temperature+shutdown+thermal+swing+IC+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "OTSD 与热摆幅 设计实例"
+            url: "https://www.google.com/search?q=over+temperature+shutdown+thermal+swing+IC+design+design+example"
+
+  load-capability-oc-ov-clamp:
+    title: "带载能力、OC clamp、OV 箝位"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "带载能力与钳位保护 基本原理"
+            url: "https://www.google.com/search?q=load+capability+overcurrent+clamp+overvoltage+clamp+IC+basics"
+          - name: "带载能力与钳位保护 关键参数"
+            url: "https://www.google.com/search?q=load+capability+overcurrent+clamp+overvoltage+clamp+IC+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "带载能力与钳位保护 设计实例"
+            url: "https://www.google.com/search?q=load+capability+overcurrent+clamp+overvoltage+clamp+IC+design+example"
+
+  emi-dpi-pti:
+    title: "EMI & DPI & PTI"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "EMI/DPI/PTI 抗扰度 基本原理"
+            url: "https://www.google.com/search?q=EMI+DPI+PTI+immunity+test+IC+analog+basics"
+          - name: "EMI/DPI/PTI 抗扰度 关键参数"
+            url: "https://www.google.com/search?q=EMI+DPI+PTI+immunity+test+IC+analog+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "EMI/DPI/PTI 抗扰度 设计实例"
+            url: "https://www.google.com/search?q=EMI+DPI+PTI+immunity+test+IC+analog+design+example"
+
+  emc-test-simulation:
+    title: "测试和仿真"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "EMC 测试与仿真 基本原理"
+            url: "https://www.google.com/search?q=EMC+test+and+simulation+IC+analog+basics"
+          - name: "EMC 测试与仿真 关键参数"
+            url: "https://www.google.com/search?q=EMC+test+and+simulation+IC+analog+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "EMC 测试与仿真 设计实例"
+            url: "https://www.google.com/search?q=EMC+test+and+simulation+IC+analog+design+example"
+
+  emc-design-notes:
+    title: "设计注意"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "EMC 设计注意 基本原理"
+            url: "https://www.google.com/search?q=EMC+design+considerations+IC+analog+basics"
+          - name: "EMC 设计注意 关键参数"
+            url: "https://www.google.com/search?q=EMC+design+considerations+IC+analog+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "EMC 设计注意 设计实例"
+            url: "https://www.google.com/search?q=EMC+design+considerations+IC+analog+design+example"
+
+  esd:
+    title: "ESD"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "静电放电 ESD 基本原理"
+            url: "https://www.google.com/search?q=ESD+protection+circuit+design+CMOS+basics"
+          - name: "静电放电 ESD 关键参数"
+            url: "https://www.google.com/search?q=ESD+protection+circuit+design+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "静电放电 ESD 设计实例"
+            url: "https://www.google.com/search?q=ESD+protection+circuit+design+CMOS+design+example"
+
+  latch-up:
+    title: "Latch-Up"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "闩锁效应 Latch-Up 基本原理"
+            url: "https://www.google.com/search?q=latch+up+CMOS+prevention+design+basics"
+          - name: "闩锁效应 Latch-Up 关键参数"
+            url: "https://www.google.com/search?q=latch+up+CMOS+prevention+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "闩锁效应 Latch-Up 设计实例"
+            url: "https://www.google.com/search?q=latch+up+CMOS+prevention+design+design+example"
+
+  guard-ring:
+    title: "Guard Ring"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "保护环 Guard Ring 基本原理"
+            url: "https://www.google.com/search?q=guard+ring+CMOS+layout+design+basics"
+          - name: "保护环 Guard Ring 关键参数"
+            url: "https://www.google.com/search?q=guard+ring+CMOS+layout+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "保护环 Guard Ring 设计实例"
+            url: "https://www.google.com/search?q=guard+ring+CMOS+layout+design+design+example"
+
+  star-routing:
+    title: "Star-Routing"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "星型走线 Star-Routing 基本原理"
+            url: "https://www.google.com/search?q=star+routing+grounding+analog+IC+layout+basics"
+          - name: "星型走线 Star-Routing 关键参数"
+            url: "https://www.google.com/search?q=star+routing+grounding+analog+IC+layout+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "星型走线 Star-Routing 设计实例"
+            url: "https://www.google.com/search?q=star+routing+grounding+analog+IC+layout+design+example"
+
+  shielding-sense-line:
+    title: "屏蔽线 & Sense线"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "屏蔽线与 Sense 线 基本原理"
+            url: "https://www.google.com/search?q=shielding+sense+line+analog+IC+layout+basics"
+          - name: "屏蔽线与 Sense 线 关键参数"
+            url: "https://www.google.com/search?q=shielding+sense+line+analog+IC+layout+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "屏蔽线与 Sense 线 设计实例"
+            url: "https://www.google.com/search?q=shielding+sense+line+analog+IC+layout+design+example"
+
+  short-circuit-protection:
+    title: "短路保护"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "短路保护 基本原理"
+            url: "https://www.google.com/search?q=short+circuit+overcurrent+protection+circuit+design+basics"
+          - name: "短路保护 关键参数"
+            url: "https://www.google.com/search?q=short+circuit+overcurrent+protection+circuit+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "短路保护 设计实例"
+            url: "https://www.google.com/search?q=short+circuit+overcurrent+protection+circuit+design+design+example"

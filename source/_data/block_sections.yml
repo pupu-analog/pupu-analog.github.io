@@ -1,35 +1,183 @@
-# 模块页配置（/circuits/）
-# 页面结构与书籍页一致：多个子分类，每个子分类占一个区块。
-# 区别：每个子分类下方竖向分成两列——
-#   第一列 items  : 每行一个条目，名字链接到 url（外部资料页）
-#   第二列 topics : 每行一个 topic，名字链接到对应的 topic 落地页
-# 后续添加：在对应分类的 items / topics 下追加即可；新增分类则复制一个 section 块。
+# 电路页配置（/circuits/）
+# 每个子分类下方竖向分成两列：第一列 items（外部资料链接），第二列 topics（topic 落地页）。
+# 后续添加：在对应分类的 items / topics 下追加即可。
 
 sections:
-  - key: amplifier
-    title: 放大器模块
+  - key: opamp
+    title: "Opamp"
     items:
-      - name: 运算放大器
-        url: https://www.google.com/search?q=operational+amplifier+analog+CMOS+design
-      - name: 跨导放大器 OTA
-        url: https://www.google.com/search?q=operational+transconductance+amplifier+analog+CMOS
-      - name: 比较器
-        url: https://www.google.com/search?q=comparator+analog+CMOS+design
+      - name: "运算放大器基础"
+        url: "https://www.google.com/search?q=operational+amplifier+analog+CMOS+design"
     topics:
-      - name: 运放设计专题
+      - name: "运放设计专题"
         id: opamp
-      - name: 稳定性与频率补偿专题
-        id: stability
+      - name: "OTA"
+        id: ota
+      - name: "Operational amplifier"
+        id: operational-amplifier
+      - name: "通用放大器"
+        id: general-purpose-opamp
+      - name: "CSA"
+        id: csa
 
-  - key: current-reference
-    title: 电流与基准模块
+  - key: reference
+    title: "Reference"
     items:
-      - name: 电流镜
-        url: https://www.google.com/search?q=current+mirror+analog+CMOS+design
-      - name: 带隙基准
-        url: https://www.google.com/search?q=bandgap+reference+analog+CMOS+design
-      - name: 低压差线性稳压器 LDO
-        url: https://www.google.com/search?q=LDO+analog+CMOS+design
+      - name: "带隙基准源"
+        url: "https://www.google.com/search?q=bandgap+voltage+reference+analog+CMOS+design"
     topics:
-      - name: 电流镜专题
-        id: current-mirror
+      - name: "基准源设计专题"
+        id: reference
+
+  - key: ldo
+    title: "Low Dropout Regulator"
+    items:
+      - name: "低压差线性稳压器 LDO"
+        url: "https://www.google.com/search?q=low+dropout+regulator+LDO+analog+CMOS+design"
+    topics:
+      - name: "LDO 设计专题"
+        id: ldo
+
+  - key: comparator
+    title: "Comparator"
+    items:
+      - name: "电压比较器"
+        url: "https://www.google.com/search?q=comparator+analog+CMOS+design"
+    topics:
+      - name: "比较器设计专题"
+        id: comparator
+      - name: "Dynamic Comparator"
+        id: dynamic-comparator
+
+  - key: oscillator
+    title: "Oscillator"
+    items:
+      - name: "环形振荡器"
+        url: "https://www.google.com/search?q=ring+oscillator+analog+CMOS+design"
+    topics:
+      - name: "振荡器设计专题"
+        id: oscillator
+
+  - key: temperature-sensor
+    title: "Temperature Sensor"
+    items:
+      - name: "温度传感器"
+        url: "https://www.google.com/search?q=temperature+sensor+CMOS+analog+design"
+    topics:
+      - name: "Temperature Sensor"
+        id: temperature-sensor
+
+  - key: gate-driver
+    title: "Gate Driver"
+    items:
+      - name: "栅极驱动电路"
+        url: "https://www.google.com/search?q=gate+driver+circuit+power+MOSFET+design"
+    topics:
+      - name: "栅极驱动专题"
+        id: gate-driver
+
+  - key: current-sense
+    title: "Current Sense"
+    items:
+      - name: "电流检测电路"
+        url: "https://www.google.com/search?q=current+sense+circuit+CMOS+analog+design"
+    topics:
+      - name: "Current Sense"
+        id: current-sense
+
+  - key: charge-pump
+    title: "Charge Pump"
+    items:
+      - name: "电荷泵倍压电路"
+        url: "https://www.google.com/search?q=charge+pump+voltage+multiplier+CMOS+design"
+    topics:
+      - name: "电荷泵设计专题"
+        id: charge-pump
+
+  - key: dcdc-converter
+    title: "DCDC Converter"
+    items:
+      - name: "降压型 DC-DC 变换器"
+        url: "https://www.google.com/search?q=buck+DC+DC+converter+analog+IC+design"
+    topics:
+      - name: "DCDC 变换器专题"
+        id: dcdc-converter
+
+  - key: level-shifter
+    title: "Level-Shifter"
+    items:
+      - name: "电平转换电路"
+        url: "https://www.google.com/search?q=level+shifter+circuit+low+to+high+voltage+CMOS"
+    topics:
+      - name: "电平转换专题"
+        id: level-shifter
+
+  - key: adc-dac
+    title: "ADC&DAC"
+    items:
+      - name: "逐次逼近型 ADC"
+        url: "https://www.google.com/search?q=SAR+ADC+DAC+analog+CMOS+design"
+    topics:
+      - name: "数据转换器专题"
+        id: adc-dac
+      - name: "Flash ADC"
+        id: flash-adc
+      - name: "SAR ADC"
+        id: sar-adc
+      - name: "Pipeline ADC"
+        id: pipeline-adc
+      - name: "Σ-Δ ADC"
+        id: sigma-delta-adc
+      - name: "R-StringDAC"
+        id: r-string-dac
+      - name: "R-2R DAC"
+        id: r-2r-dac
+      - name: "Current Steering DAC"
+        id: current-steering-dac
+      - name: "Σ-Δ DAC"
+        id: sigma-delta-dac
+
+  - key: pll
+    title: "PLL"
+    items:
+      - name: "锁相环基础"
+        url: "https://www.google.com/search?q=phase+locked+loop+PLL+analog+CMOS+design"
+    topics:
+      - name: "锁相环设计专题"
+        id: pll
+
+  - key: por
+    title: "Power On Reset"
+    items:
+      - name: "上电复位电路"
+        url: "https://www.google.com/search?q=power+on+reset+circuit+analog+CMOS+design"
+    topics:
+      - name: "上电复位专题"
+        id: por
+
+  - key: io
+    title: "IO"
+    items:
+      - name: "输入输出接口电路"
+        url: "https://www.google.com/search?q=IO+pad+circuit+ESD+protection+analog+CMOS"
+    topics:
+      - name: "IO 接口专题"
+        id: io
+
+  - key: otp
+    title: "OTP"
+    items:
+      - name: "一次性可编程存储"
+        url: "https://www.google.com/search?q=one+time+programmable+OTP+memory+circuit+design"
+    topics:
+      - name: "OTP 存储专题"
+        id: otp
+
+  - key: eeprom
+    title: "EEPROM"
+    items:
+      - name: "电可擦除只读存储"
+        url: "https://www.google.com/search?q=EEPROM+memory+circuit+design+CMOS"
+    topics:
+      - name: "EEPROM 专题"
+        id: eeprom

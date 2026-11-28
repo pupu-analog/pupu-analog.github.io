@@ -1,0 +1,11 @@
+# Layout页配置（/layout/）
+# 布局与书籍页一致：每个分类一组条目，每条独占一行；条目可选 reading / reading_url 追加「阅读整理」。
+
+sections:
+  - key: layout-basics
+    title: 版图基础
+    items:
+      - name: "版图设计流程"
+        url: "https://www.google.com/search?q=layout+design+flow+CMOS+analog"
+      - name: "匹配与对称性布局"
+        url: "https://www.google.com/search?q=layout+matching+symmetry+analog+CMOS"

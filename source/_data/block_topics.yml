@@ -1,49 +1,423 @@
-# Topic 落地页配置
-# 每个 topic 的页面与书籍页布局一致：多个子分类，每个分类包含多个条目。
-# 条目格式：name（带链接的名字）+ url（目标网址）。
-# topic id 需与 block_sections.yml 中 topics[].id 对应，并生成同名 md 页面。
+# Topic 落地页配置（与书籍页布局一致：多个子分类，每个分类多个条目）
+# topic id 对应 source/circuits/<id>.md 页面。
 
 topics:
   opamp:
-    title: 运放设计专题
+    title: "运放设计专题"
     sections:
-      - title: 关键指标
+      - title: 设计要点
         items:
-          - name: 开环增益与带宽
-            url: https://www.google.com/search?q=opamp+open+loop+gain+bandwidth+analog+CMOS
-          - name: 输入失调与噪声
-            url: https://www.google.com/search?q=opamp+offset+noise+analog+CMOS+design
-      - title: 经典结构
+          - name: "运算放大器基础 基本原理"
+            url: "https://www.google.com/search?q=operational+amplifier+analog+CMOS+design+basics"
+          - name: "运算放大器基础 关键参数"
+            url: "https://www.google.com/search?q=operational+amplifier+analog+CMOS+design+key+specifications"
+      - title: 参考资料
         items:
-          - name: 两级运放
-            url: https://www.google.com/search?q=two+stage+operational+amplifier+analog+CMOS
-          - name: 共源共栅运放
-            url: https://www.google.com/search?q=cascode+operational+amplifier+analog+CMOS
+          - name: "运算放大器基础 设计实例"
+            url: "https://www.google.com/search?q=operational+amplifier+analog+CMOS+design+design+example"
 
-  stability:
-    title: 稳定性与频率补偿专题
+  reference:
+    title: "基准源设计专题"
     sections:
-      - title: 稳定性分析
+      - title: 设计要点
         items:
-          - name: 极点与零点
-            url: https://www.google.com/search?q=opamp+poles+zeros+stability+analog+CMOS
-          - name: 相位裕度与阶跃响应
-            url: https://www.google.com/search?q=phase+margin+step+response+opamp+stability
-      - title: 补偿方法
+          - name: "带隙基准源 基本原理"
+            url: "https://www.google.com/search?q=bandgap+voltage+reference+analog+CMOS+design+basics"
+          - name: "带隙基准源 关键参数"
+            url: "https://www.google.com/search?q=bandgap+voltage+reference+analog+CMOS+design+key+specifications"
+      - title: 参考资料
         items:
-          - name: 米勒补偿与调零电阻
-            url: https://www.google.com/search?q=Miller+compensation+nulling+resistor+opamp
+          - name: "带隙基准源 设计实例"
+            url: "https://www.google.com/search?q=bandgap+voltage+reference+analog+CMOS+design+design+example"
 
-  current-mirror:
-    title: 电流镜专题
+  ldo:
+    title: "LDO 设计专题"
     sections:
-      - title: 基本结构
+      - title: 设计要点
         items:
-          - name: 简单 CMOS 电流镜
-            url: https://www.google.com/search?q=simple+CMOS+current+mirror+analog+design
-          - name: 共源共栅电流镜
-            url: https://www.google.com/search?q=cascode+current+mirror+analog+CMOS
-      - title: 改进技术
+          - name: "低压差线性稳压器 LDO 基本原理"
+            url: "https://www.google.com/search?q=low+dropout+regulator+LDO+analog+CMOS+design+basics"
+          - name: "低压差线性稳压器 LDO 关键参数"
+            url: "https://www.google.com/search?q=low+dropout+regulator+LDO+analog+CMOS+design+key+specifications"
+      - title: 参考资料
         items:
-          - name: Wilson 电流镜
-            url: https://www.google.com/search?q=Wilson+current+mirror+analog+design
+          - name: "低压差线性稳压器 LDO 设计实例"
+            url: "https://www.google.com/search?q=low+dropout+regulator+LDO+analog+CMOS+design+design+example"
+
+  comparator:
+    title: "比较器设计专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "电压比较器 基本原理"
+            url: "https://www.google.com/search?q=comparator+analog+CMOS+design+basics"
+          - name: "电压比较器 关键参数"
+            url: "https://www.google.com/search?q=comparator+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "电压比较器 设计实例"
+            url: "https://www.google.com/search?q=comparator+analog+CMOS+design+design+example"
+
+  oscillator:
+    title: "振荡器设计专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "环形振荡器 基本原理"
+            url: "https://www.google.com/search?q=ring+oscillator+analog+CMOS+design+basics"
+          - name: "环形振荡器 关键参数"
+            url: "https://www.google.com/search?q=ring+oscillator+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "环形振荡器 设计实例"
+            url: "https://www.google.com/search?q=ring+oscillator+analog+CMOS+design+design+example"
+
+  gate-driver:
+    title: "栅极驱动专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "栅极驱动电路 基本原理"
+            url: "https://www.google.com/search?q=gate+driver+circuit+power+MOSFET+design+basics"
+          - name: "栅极驱动电路 关键参数"
+            url: "https://www.google.com/search?q=gate+driver+circuit+power+MOSFET+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "栅极驱动电路 设计实例"
+            url: "https://www.google.com/search?q=gate+driver+circuit+power+MOSFET+design+design+example"
+
+  charge-pump:
+    title: "电荷泵设计专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "电荷泵倍压电路 基本原理"
+            url: "https://www.google.com/search?q=charge+pump+voltage+multiplier+CMOS+design+basics"
+          - name: "电荷泵倍压电路 关键参数"
+            url: "https://www.google.com/search?q=charge+pump+voltage+multiplier+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "电荷泵倍压电路 设计实例"
+            url: "https://www.google.com/search?q=charge+pump+voltage+multiplier+CMOS+design+design+example"
+
+  dcdc-converter:
+    title: "DCDC 变换器专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "降压型 DC-DC 变换器 基本原理"
+            url: "https://www.google.com/search?q=buck+DC+DC+converter+analog+IC+design+basics"
+          - name: "降压型 DC-DC 变换器 关键参数"
+            url: "https://www.google.com/search?q=buck+DC+DC+converter+analog+IC+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "降压型 DC-DC 变换器 设计实例"
+            url: "https://www.google.com/search?q=buck+DC+DC+converter+analog+IC+design+design+example"
+
+  level-shifter:
+    title: "电平转换专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "电平转换电路 基本原理"
+            url: "https://www.google.com/search?q=level+shifter+circuit+low+to+high+voltage+CMOS+basics"
+          - name: "电平转换电路 关键参数"
+            url: "https://www.google.com/search?q=level+shifter+circuit+low+to+high+voltage+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "电平转换电路 设计实例"
+            url: "https://www.google.com/search?q=level+shifter+circuit+low+to+high+voltage+CMOS+design+example"
+
+  adc-dac:
+    title: "数据转换器专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "逐次逼近型 ADC 基本原理"
+            url: "https://www.google.com/search?q=SAR+ADC+DAC+analog+CMOS+design+basics"
+          - name: "逐次逼近型 ADC 关键参数"
+            url: "https://www.google.com/search?q=SAR+ADC+DAC+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "逐次逼近型 ADC 设计实例"
+            url: "https://www.google.com/search?q=SAR+ADC+DAC+analog+CMOS+design+design+example"
+
+  pll:
+    title: "锁相环设计专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "锁相环基础 基本原理"
+            url: "https://www.google.com/search?q=phase+locked+loop+PLL+analog+CMOS+design+basics"
+          - name: "锁相环基础 关键参数"
+            url: "https://www.google.com/search?q=phase+locked+loop+PLL+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "锁相环基础 设计实例"
+            url: "https://www.google.com/search?q=phase+locked+loop+PLL+analog+CMOS+design+design+example"
+
+  por:
+    title: "上电复位专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "上电复位电路 基本原理"
+            url: "https://www.google.com/search?q=power+on+reset+circuit+analog+CMOS+design+basics"
+          - name: "上电复位电路 关键参数"
+            url: "https://www.google.com/search?q=power+on+reset+circuit+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "上电复位电路 设计实例"
+            url: "https://www.google.com/search?q=power+on+reset+circuit+analog+CMOS+design+design+example"
+
+  io:
+    title: "IO 接口专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "输入输出接口电路 基本原理"
+            url: "https://www.google.com/search?q=IO+pad+circuit+ESD+protection+analog+CMOS+basics"
+          - name: "输入输出接口电路 关键参数"
+            url: "https://www.google.com/search?q=IO+pad+circuit+ESD+protection+analog+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "输入输出接口电路 设计实例"
+            url: "https://www.google.com/search?q=IO+pad+circuit+ESD+protection+analog+CMOS+design+example"
+
+  otp:
+    title: "OTP 存储专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "一次性可编程存储 基本原理"
+            url: "https://www.google.com/search?q=one+time+programmable+OTP+memory+circuit+design+basics"
+          - name: "一次性可编程存储 关键参数"
+            url: "https://www.google.com/search?q=one+time+programmable+OTP+memory+circuit+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "一次性可编程存储 设计实例"
+            url: "https://www.google.com/search?q=one+time+programmable+OTP+memory+circuit+design+design+example"
+
+  eeprom:
+    title: "EEPROM 专题"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "电可擦除只读存储 基本原理"
+            url: "https://www.google.com/search?q=EEPROM+memory+circuit+design+CMOS+basics"
+          - name: "电可擦除只读存储 关键参数"
+            url: "https://www.google.com/search?q=EEPROM+memory+circuit+design+CMOS+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "电可擦除只读存储 设计实例"
+            url: "https://www.google.com/search?q=EEPROM+memory+circuit+design+CMOS+design+example"
+
+  temperature-sensor:
+    title: "Temperature Sensor"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "温度传感器 基本原理"
+            url: "https://www.google.com/search?q=temperature+sensor+CMOS+analog+design+basics"
+          - name: "温度传感器 关键参数"
+            url: "https://www.google.com/search?q=temperature+sensor+CMOS+analog+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "温度传感器 设计实例"
+            url: "https://www.google.com/search?q=temperature+sensor+CMOS+analog+design+design+example"
+
+  current-sense:
+    title: "Current Sense"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "电流检测电路 基本原理"
+            url: "https://www.google.com/search?q=current+sense+circuit+CMOS+analog+design+basics"
+          - name: "电流检测电路 关键参数"
+            url: "https://www.google.com/search?q=current+sense+circuit+CMOS+analog+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "电流检测电路 设计实例"
+            url: "https://www.google.com/search?q=current+sense+circuit+CMOS+analog+design+design+example"
+
+  dynamic-comparator:
+    title: "Dynamic Comparator"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "动态比较器 基本原理"
+            url: "https://www.google.com/search?q=dynamic+comparator+CMOS+analog+design+basics"
+          - name: "动态比较器 关键参数"
+            url: "https://www.google.com/search?q=dynamic+comparator+CMOS+analog+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "动态比较器 设计实例"
+            url: "https://www.google.com/search?q=dynamic+comparator+CMOS+analog+design+design+example"
+
+  ota:
+    title: "OTA"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "跨导运算放大器 基本原理"
+            url: "https://www.google.com/search?q=operational+transconductance+amplifier+OTA+CMOS+design+basics"
+          - name: "跨导运算放大器 关键参数"
+            url: "https://www.google.com/search?q=operational+transconductance+amplifier+OTA+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "跨导运算放大器 设计实例"
+            url: "https://www.google.com/search?q=operational+transconductance+amplifier+OTA+CMOS+design+design+example"
+
+  operational-amplifier:
+    title: "Operational amplifier"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "运算放大器 基本原理"
+            url: "https://www.google.com/search?q=operational+amplifier+analog+CMOS+design+basics"
+          - name: "运算放大器 关键参数"
+            url: "https://www.google.com/search?q=operational+amplifier+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "运算放大器 设计实例"
+            url: "https://www.google.com/search?q=operational+amplifier+analog+CMOS+design+design+example"
+
+  general-purpose-opamp:
+    title: "通用放大器"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "通用放大器 基本原理"
+            url: "https://www.google.com/search?q=general+purpose+operational+amplifier+CMOS+design+basics"
+          - name: "通用放大器 关键参数"
+            url: "https://www.google.com/search?q=general+purpose+operational+amplifier+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "通用放大器 设计实例"
+            url: "https://www.google.com/search?q=general+purpose+operational+amplifier+CMOS+design+design+example"
+
+  csa:
+    title: "CSA"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "电容跨阻放大器 基本原理"
+            url: "https://www.google.com/search?q=capacitive+transimpedance+amplifier+CSA+CMOS+design+basics"
+          - name: "电容跨阻放大器 关键参数"
+            url: "https://www.google.com/search?q=capacitive+transimpedance+amplifier+CSA+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "电容跨阻放大器 设计实例"
+            url: "https://www.google.com/search?q=capacitive+transimpedance+amplifier+CSA+CMOS+design+design+example"
+
+  flash-adc:
+    title: "Flash ADC"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "Flash ADC 基本原理"
+            url: "https://www.google.com/search?q=flash+ADC+analog+CMOS+design+basics"
+          - name: "Flash ADC 关键参数"
+            url: "https://www.google.com/search?q=flash+ADC+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "Flash ADC 设计实例"
+            url: "https://www.google.com/search?q=flash+ADC+analog+CMOS+design+design+example"
+
+  sar-adc:
+    title: "SAR ADC"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "SAR ADC 基本原理"
+            url: "https://www.google.com/search?q=SAR+ADC+successive+approximation+analog+CMOS+design+basics"
+          - name: "SAR ADC 关键参数"
+            url: "https://www.google.com/search?q=SAR+ADC+successive+approximation+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "SAR ADC 设计实例"
+            url: "https://www.google.com/search?q=SAR+ADC+successive+approximation+analog+CMOS+design+design+example"
+
+  pipeline-adc:
+    title: "Pipeline ADC"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "Pipeline ADC 基本原理"
+            url: "https://www.google.com/search?q=pipeline+ADC+analog+CMOS+design+basics"
+          - name: "Pipeline ADC 关键参数"
+            url: "https://www.google.com/search?q=pipeline+ADC+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "Pipeline ADC 设计实例"
+            url: "https://www.google.com/search?q=pipeline+ADC+analog+CMOS+design+design+example"
+
+  sigma-delta-adc:
+    title: "Σ-Δ ADC"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "Σ-Δ ADC 基本原理"
+            url: "https://www.google.com/search?q=sigma+delta+ADC+analog+CMOS+design+basics"
+          - name: "Σ-Δ ADC 关键参数"
+            url: "https://www.google.com/search?q=sigma+delta+ADC+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "Σ-Δ ADC 设计实例"
+            url: "https://www.google.com/search?q=sigma+delta+ADC+analog+CMOS+design+design+example"
+
+  r-string-dac:
+    title: "R-StringDAC"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "R-String DAC 基本原理"
+            url: "https://www.google.com/search?q=resistor+string+DAC+analog+CMOS+design+basics"
+          - name: "R-String DAC 关键参数"
+            url: "https://www.google.com/search?q=resistor+string+DAC+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "R-String DAC 设计实例"
+            url: "https://www.google.com/search?q=resistor+string+DAC+analog+CMOS+design+design+example"
+
+  r-2r-dac:
+    title: "R-2R DAC"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "R-2R DAC 基本原理"
+            url: "https://www.google.com/search?q=R+2R+DAC+analog+CMOS+design+basics"
+          - name: "R-2R DAC 关键参数"
+            url: "https://www.google.com/search?q=R+2R+DAC+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "R-2R DAC 设计实例"
+            url: "https://www.google.com/search?q=R+2R+DAC+analog+CMOS+design+design+example"
+
+  current-steering-dac:
+    title: "Current Steering DAC"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "电流舵 DAC 基本原理"
+            url: "https://www.google.com/search?q=current+steering+DAC+analog+CMOS+design+basics"
+          - name: "电流舵 DAC 关键参数"
+            url: "https://www.google.com/search?q=current+steering+DAC+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "电流舵 DAC 设计实例"
+            url: "https://www.google.com/search?q=current+steering+DAC+analog+CMOS+design+design+example"
+
+  sigma-delta-dac:
+    title: "Σ-Δ DAC"
+    sections:
+      - title: 设计要点
+        items:
+          - name: "Σ-Δ DAC 基本原理"
+            url: "https://www.google.com/search?q=sigma+delta+DAC+analog+CMOS+design+basics"
+          - name: "Σ-Δ DAC 关键参数"
+            url: "https://www.google.com/search?q=sigma+delta+DAC+analog+CMOS+design+key+specifications"
+      - title: 参考资料
+        items:
+          - name: "Σ-Δ DAC 设计实例"
+            url: "https://www.google.com/search?q=sigma+delta+DAC+analog+CMOS+design+design+example"

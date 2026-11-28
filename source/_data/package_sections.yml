@@ -1,0 +1,11 @@
+# 封装页配置（/package/）
+# 布局与书籍页一致：每个分类一组条目，每条独占一行；条目可选 reading / reading_url 追加「阅读整理」。
+
+sections:
+  - key: package-basics
+    title: 封装基础
+    items:
+      - name: "封装类型与选型"
+        url: "https://www.google.com/search?q=IC+package+types+selection"
+      - name: "封装寄生参数"
+        url: "https://www.google.com/search?q=package+parasitic+parameters+analog+IC"
