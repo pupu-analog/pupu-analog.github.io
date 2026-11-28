@@ -3,12 +3,11 @@ headline: 仿真
 tagline: 电路仿真、建模与验证方法
 description: 整理 EDA 仿真工具、行为级建模与验证方法相关资料。
 route:
-  path: /tools/
+  path: /simulation/
 navigation:
   tree:
     '总览':
       - index
       - simulation-notes
-      - site-guide
 listing:
   order: 6

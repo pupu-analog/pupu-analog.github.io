@@ -1,7 +1,7 @@
-# 质量页配置（/tbd/）
+# 质量页配置（/quality/）
 # 布局与书籍页一致：多个子分类，每条只显示带链接的名字。
 
-reading_url: /tbd/quality-notes/
+reading_url: /quality/quality-notes/
 
 sections:
   - key: verification

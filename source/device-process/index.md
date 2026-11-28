@@ -5,8 +5,8 @@ comments:
   enabled: false
 collection:
   profile: wiki
-  id: devices
-active_menu: devices
+  id: device-process
+active_menu: device-process
 ---
 
 <div class="guide-home">

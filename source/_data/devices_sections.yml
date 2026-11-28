@@ -1,8 +1,8 @@
-# 器件工艺页配置（/devices/）
+# 器件工艺页配置（/device-process/）
 # 布局与书籍页一致：多个子分类，每条只显示带链接的名字。
 # 页面末尾统一的「阅读整理」入口指向 reading_url。
 
-reading_url: /devices/device-notes/
+reading_url: /device-process/device-notes/
 
 sections:
   - key: mos-device

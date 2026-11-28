@@ -3,7 +3,7 @@ headline: 质量
 tagline: 设计验证与质量方法
 description: 整理设计评审、仿真验证、可靠性与质量方法相关资料。
 route:
-  path: /tbd/
+  path: /quality/
 navigation:
   tree:
     '总览':

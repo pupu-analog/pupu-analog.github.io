@@ -1,14 +1,14 @@
 ---
-title: 模块
+title: 质量
 layout: page
 comments:
   enabled: false
 collection:
   profile: wiki
-  id: blocks
-active_menu: blocks
+  id: quality
+active_menu: quality
 ---
 
 <div class="guide-home">
-  {% block_sections %}
+  {% wiki_sections tbd_sections %}
 </div>

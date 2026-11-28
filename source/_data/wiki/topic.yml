@@ -3,7 +3,7 @@ headline: 主题汇总
 tagline: 按主题汇总资料与延伸阅读
 description: 按主题整理资料、论文与延伸阅读，结构与书籍页一致。
 route:
-  path: /others/
+  path: /topic/
 navigation:
   tree:
     '总览':

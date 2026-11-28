@@ -1,14 +1,14 @@
 ---
-title: 仿真
+title: 模块
 layout: page
 comments:
   enabled: false
 collection:
   profile: wiki
-  id: tools
-active_menu: tools
+  id: circuits
+active_menu: circuits
 ---
 
 <div class="guide-home">
-  {% wiki_sections tools_sections %}
+  {% block_sections %}
 </div>

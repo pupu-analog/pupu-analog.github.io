@@ -6,25 +6,38 @@ comments:
   enabled: false
 ---
 
-<style>
-/* 主页正文全部隐藏，只保留右侧目录栏（标题结构保留用于生成目录） */
-.site-main .article-banner-wrap,
-.site-main article.md-text { display: none !important; }
-</style>
+# 站点维护速查
 
-<div class="guide-home">
-  <div class="guide-sections">
-    <div class="guide-section"><h3><a href="/books/">书籍</a></h3><p>模拟设计经典教材与逐章读书笔记</p></div>
-    <div class="guide-section"><h3><a href="/blocks/">电路</a></h3><p>可复用的电路模块、设计步骤与验证方法</p></div>
-    <div class="guide-section"><h3><a href="/devices/">器件工艺</a></h3><p>器件物理、制造工艺与版图可靠性</p></div>
-    <div class="guide-section"><h3><a href="/others/">topic</a></h3><p>按主题汇总的资料与延伸阅读</p></div>
-    <div class="guide-section"><h3><a href="/projects/">项目</a></h3><p>从需求到验证的完整实践记录</p></div>
-    <div class="guide-section"><h3><a href="/tools/">仿真</a></h3><p>EDA 工具、行为级建模与验证方法</p></div>
-    <div class="guide-section"><h3><a href="/tbd/">质量</a></h3><p>设计评审、可靠性与质量方法</p></div>
-  </div>
+## 结构
 
-  <div class="guide-whats-new">
-    <h2>What's New</h2>
-    {% whats_new 8 %}
-  </div>
-</div>
+Hexo 8 + Stellar 2 静态站，GitHub Pages 自动发布。7 个集合栏目 + 博客时间线（`/blog/`）。栏目页是数据驱动的清单，笔记正文在独立 md 页。
+
+## 常改文件
+
+| 文件 | 用途 |
+| --- | --- |
+| `_config.stellar.yml` | 顶栏、页脚、样式 |
+| `source/_data/*_sections.yml` | 各栏目条目（日常只改这里） |
+| `source/_data/wiki/*.yml` | 栏目名、导航树 |
+| `source/<栏目>/*.md` | 阅读笔记 |
+| `scripts/*.js` | 渲染脚本（布局定好后不用动） |
+
+## 更新操作
+
+- 加条目：在对应 `*_sections.yml` 的 `items` 下追加 `name` + `url`
+- 写笔记：新建 `source/<栏目>/xxx.md`，并在 `wiki/<栏目>.yml` 的 tree 登记
+- 写博客：`hexo new post "标题"`，编辑 `source/_posts/`
+- 改栏目名/顺序：`_config.stellar.yml` + `wiki.yml` + `wiki/*.yml`
+
+## 容量
+
+仓库 0.12 MB / 1 GB（约 0.01%）；`public/`、`node_modules/` 不计入。图片放 `source/images/`，控制大小。
+
+## 注意
+
+1. 不改 `public/`、`db.json`、`node_modules/`、`caches/`——会被覆盖或忽略。
+2. YAML 的 `name` 含冒号要加英文双引号；缩进用空格。
+3. 新增笔记页要在 `wiki/<栏目>.yml` 登记，否则不进导航树。
+4. 推送失败先试无代理 `git push`，再走 API；以 tree 一致为准。
+5. push 后 1–5 分钟生效，看不到改动先 `Ctrl+F5`。
+6. 外链用搜索页/稳定来源，避免网盘直链。

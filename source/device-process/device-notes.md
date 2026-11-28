@@ -3,7 +3,7 @@ title: 阅读整理
 date: 2026-11-27
 collection:
   profile: wiki
-  id: devices
+  id: device-process
 ---
 
 # 阅读整理

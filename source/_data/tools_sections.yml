@@ -1,7 +1,7 @@
-# 仿真页配置（/tools/）
+# 仿真页配置（/simulation/）
 # 布局与书籍页一致：多个子分类，每条只显示带链接的名字。
 
-reading_url: /tools/simulation-notes/
+reading_url: /simulation/simulation-notes/
 
 sections:
   - key: eda

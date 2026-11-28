@@ -3,7 +3,7 @@ title: 阅读整理
 date: 2026-11-27
 collection:
   profile: wiki
-  id: tools
+  id: simulation
 ---
 
 # 阅读整理

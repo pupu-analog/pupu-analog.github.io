@@ -5,8 +5,8 @@ comments:
   enabled: false
 collection:
   profile: wiki
-  id: others
-active_menu: others
+  id: topic
+active_menu: topic
 ---
 
 <div class="guide-home">

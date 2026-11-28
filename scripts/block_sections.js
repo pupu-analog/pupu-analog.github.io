@@ -18,7 +18,7 @@ function normalizeUrl(value) {
 
 // 渲染模块页：每个子分类 = 一组条目 + 一组 topic，竖向分成两列。
 // 第一列 items  : 每行一个条目，名字链接到 url（外部资料页）
-// 第二列 topics : 每行一个 topic，名字链接到 /blocks/<id>/ 落地页
+// 第二列 topics : 每行一个 topic，名字链接到 /circuits/<id>/ 落地页
 // 数据源：source/_data/block_sections.yml
 hexo.extend.tag.register("block_sections", function () {
   var data = (hexo.locals.get("data") || {}).block_sections || {};
@@ -43,7 +43,7 @@ hexo.extend.tag.register("block_sections", function () {
     var topics = (section.topics || []).map(function (topic) {
       var id = String(topic.id || "").trim();
       var name = escapeHtml(topic.name || id || "未命名 topic");
-      var href = id ? "/blocks/" + encodeURIComponent(id) + "/" : "";
+      var href = id ? "/circuits/" + encodeURIComponent(id) + "/" : "";
       return '<div class="bk-item">' +
         (href
           ? '<a class="bk-name" href="' + escapeHtml(href) + '">' + name + "</a>"

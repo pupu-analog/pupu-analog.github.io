@@ -1,11 +1,11 @@
-# topic 页配置（/others/）
+# topic 页配置（/topic/）
 # 布局与书籍页一致：多个子分类，每个分类包含多个条目，每条只显示带链接的名字。
 #   - name : 显示的名字（名字链接到 url）
 #   - url  : 名字要跳转的网址（外部资料页 / Google 搜索）
 # 页面末尾统一显示一个「阅读整理」入口，指向下面的 reading_url。
 # 后续添加：在对应分类的 items 下追加即可；新增分类则复制一个 section 块。
 
-reading_url: /others/topic-notes/
+reading_url: /topic/topic-notes/
 
 sections:
   - key: analog-basics

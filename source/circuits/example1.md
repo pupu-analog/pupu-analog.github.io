@@ -3,7 +3,7 @@ title: 示例模块
 date: 2026-11-26
 collection:
   profile: wiki
-  id: blocks
+  id: circuits
 ---
 
 这是一个用于演示目录树和页面链接的模块条目。

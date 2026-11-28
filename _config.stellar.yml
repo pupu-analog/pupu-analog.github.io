@@ -22,24 +22,24 @@ topbar:
     - id: books
       title: 书籍
       url: /books/
-    - id: blocks
+    - id: circuits
       title: 电路
-      url: /blocks/
-    - id: devices
+      url: /circuits/
+    - id: device-process
       title: 器件工艺
-      url: /devices/
-    - id: others
+      url: /device-process/
+    - id: topic
       title: topic
-      url: /others/
+      url: /topic/
     - id: projects
       title: 项目
       url: /projects/
-    - id: tools
+    - id: simulation
       title: 仿真
-      url: /tools/
-    - id: tbd
+      url: /simulation/
+    - id: quality
       title: 质量
-      url: /tbd/
+      url: /quality/
   widgets: [spacer, menu, settings]
 
 # 首页单独覆盖，确保顶栏在根路径显示
@@ -62,14 +62,14 @@ footer:
         - '[博客](/blog/)'
         - '[归档](/archives/)'
         - '[书籍](/books/)'
-        - '[电路](/blocks/)'
-        - '[器件工艺](/devices/)'
-        - '[topic](/others/)'
+        - '[电路](/circuits/)'
+        - '[器件工艺](/device-process/)'
+        - '[topic](/topic/)'
         - '[项目](/projects/)'
     - title: 更多
       items:
-        - '[仿真](/tools/)'
-        - '[质量](/tbd/)'
+        - '[仿真](/simulation/)'
+        - '[质量](/quality/)'
         - '[GitHub](https://github.com/pupu-analog)'
 
 # SEO
