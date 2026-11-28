@@ -9,6 +9,7 @@ navigation:
     '总览':
       - index
       - reading-notes
+      - aacd-notes
       - acsp-series
     '模拟书籍':
       - book1

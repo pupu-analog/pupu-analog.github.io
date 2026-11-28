@@ -1,11 +1,12 @@
 # 书籍页的子分类配置
-# 每个分类 = 一组条目，每条独占一行，只显示带链接的名字。
+# 每个分类 = 一组条目，每条独占一行。
 #   - name : 显示的名字（名字链接到 url）
 #   - url  : 名字要跳转的网址（外部资料页 / Google PDF 搜索）
-# 页面末尾统一显示一个「阅读整理」入口，指向下面的 reading_url（阅读整理汇总页）。
+#   - reading / reading_url（条目级）：在名字后用分号接一个「阅读整理」链接
+# 分类级 reading / reading_url：在该分类所有条目下方放一个统一的「阅读整理」链接
 # 后续添加条目：在对应分类的 items 下追加一条即可，不需要改页面代码。
 
-reading_url: /books/reading-notes/
+
 
 sections:
   - key: foundations
@@ -13,19 +14,33 @@ sections:
     items:
       - name: "Analysis and Design of Analog Integrated Circuits 5th - Gray"
         url: "https://www.google.com/search?q=Analysis+and+Design+of+Analog+Integrated+Circuits+5th+Gray+pdf"
+        reading: 阅读整理
+        reading_url: /books/book1/
       - name: "Analog Integrated Circuit Design 2nd - Johns Martin"
         url: "https://www.google.com/search?q=Analog+Integrated+Circuit+Design+2nd+Johns+Martin+pdf"
+        reading: 阅读整理
+        reading_url: /books/book2/
       - name: "Design of Analog CMOS Integrated Circuits 2nd - Razavi"
         url: "https://www.google.com/search?q=Design+of+Analog+CMOS+Integrated+Circuits+2nd+Razavi+pdf"
+        reading: 阅读整理
+        reading_url: /books/book3/
       - name: "Analog Design Essentials - Sansen"
         url: "https://www.google.com/search?q=Analog+Design+Essentials+Sansen+pdf"
+        reading: 阅读整理
+        reading_url: /books/book4/
       - name: "CMOS Analog Circuit Design 3rd - Allen"
         url: "https://www.google.com/search?q=CMOS+Analog+Circuit+Design+3rd+Allen+pdf"
+        reading: 阅读整理
+        reading_url: /books/book5/
       - name: "Design of Analog Integrated Circuits and Systems - Laker Sansen"
         url: "https://www.google.com/search?q=Design+of+Analog+Integrated+Circuits+and+Systems+Laker+Sansen+pdf"
+        reading: 阅读整理
+        reading_url: /books/book6/
 
   - key: converters
     title: Analog circuits design 系列
+    reading: 阅读整理
+    reading_url: /books/aacd-notes/
     items:
       - name: "1993 - Operational Amplifiers, Analog to Digital Convertors, Analog Computer Aided Design"
         url: "https://www.google.com/search?q=1993+-+Operational+Amplifiers%2C+Analog+to+Digital+Convertors%2C+Analog+Computer+Aided+Design+pdf"
@@ -100,6 +115,8 @@ sections:
 
   - key: acsp-series
     title: Analog circuits and signal processing 系列
+    reading: 阅读整理
+    reading_url: /books/acsp-series/
     items:
       - name: "2006 - Adaptive Low-Power Circuits for Wireless Communications"
         url: "https://link.springer.com/book/9781402052491"

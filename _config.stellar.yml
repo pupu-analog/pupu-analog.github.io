@@ -108,7 +108,8 @@ inject:
     .bk-item { display: flex; align-items: baseline; font-size: 15px; line-height: 1.5; }
     .bk-name { color: var(--color-link, #1b5e9c); text-decoration: none; }
     .bk-name:hover { text-decoration: underline; }
-    .bk-reading-row { margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--color-border-tertiary, #d5dce3); }
+    .bk-sep { color: var(--color-text-secondary, #53606d); }
+    .bk-section-reading { margin-top: 8px; font-size: 15px; }
     .bk-reading { color: var(--color-link, #1b5e9c); text-decoration: none; font-size: 15px; }
     a.bk-reading:hover { text-decoration: underline; }
     .bk-empty { font-size: 14px; color: var(--color-text-tertiary, #77828d); }
