@@ -36,6 +36,34 @@ sections:
         url: "https://www.google.com/search?q=Design+of+Analog+Integrated+Circuits+and+Systems+Laker+Sansen+pdf"
         reading: 阅读整理
         reading_url: /books/book6/
+      - name: "CMOS-Circuit-Design-Layout-and-Simulation-3rd-Edition"
+        url: "https://www.google.com/search?q=CMOS+Circuit+Design+Layout+and+Simulation+3rd+Edition+Baker+pdf"
+        reading: 阅读整理
+        reading_url: /books/book7/
+      - name: "R. Jacob Baker - CMOS Mixed-Signal Circuit Design"
+        url: "https://www.google.com/search?q=R+Jacob+Baker+CMOS+Mixed-Signal+Circuit+Design+2nd+pdf"
+        reading: 阅读整理
+        reading_url: /books/book8/
+      - name: "[Behzad_Razavi]_Fundamentals_of_Microelectronic"
+        url: "https://www.google.com/search?q=Behzad+Razavi+Fundamentals+of+Microelectronics+2nd+edition+pdf"
+        reading: 阅读整理
+        reading_url: /books/book9/
+      - name: "Intuitive-Analog-Circuit-Design-Second-Edition"
+        url: "https://www.google.com/search?q=Intuitive+Analog+Circuit+Design+Second+Edition+Marc+Thompson+pdf"
+        reading: 阅读整理
+        reading_url: /books/book10/
+      - name: "Systematic Design of Analog CMOS Circuits"
+        url: "https://www.google.com/search?q=Systematic+Design+of+Analog+CMOS+Circuits+Jespers+Murmann+pdf"
+        reading: 阅读整理
+        reading_url: /books/book11/
+      - name: "The Art and Science of Analog Circuit Design-Newnes (1998)"
+        url: "https://www.google.com/search?q=The+Art+and+Science+of+Analog+Circuit+Design+Jim+Williams+1998+pdf"
+        reading: 阅读整理
+        reading_url: /books/book12/
+      - name: "Analog Circuit Design_ Art, Science and Personalities"
+        url: "https://www.google.com/search?q=Analog+Circuit+Design+Art+Science+and+Personalities+Jim+Williams+1991+pdf"
+        reading: 阅读整理
+        reading_url: /books/book13/
 
   - key: converters
     title: Analog circuits design 系列
