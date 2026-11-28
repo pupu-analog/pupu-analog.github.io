@@ -57,3 +57,7 @@ collection:
 
 - [模拟集成电路设计与仿真](/books/analog-simulation/)
 - [ADC 架构与设计](/books/adc-architecture/)
+
+## Analog circuits and signal processing 系列
+
+- [全部 173 本书的内容简介（2006–2026）](/books/acsp-series/)
