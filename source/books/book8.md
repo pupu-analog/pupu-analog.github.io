@@ -1,13 +1,12 @@
 ---
-title: "R. Jacob Baker - CMOS Mixed-Signal Circuit Design"
+title: "CMOS Mixed-Signal Circuit Design 2nd - Baker"
 date: 2026-11-28
 collection:
   profile: wiki
   id: books
 ---
 
-# CMOS Mixed-Signal Circuit Design（第二版） 大纲目录
-
+# CMOS Mixed-Signal Circuit Design 2nd - Baker 大纲目录
 作者：R. Jacob Baker（Wiley-IEEE Press，2009）
 ISBN：978-0-470-29026-2
 

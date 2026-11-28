@@ -1,13 +1,12 @@
 ---
-title: "CMOS-Circuit-Design-Layout-and-Simulation-3rd-Edition"
+title: "CMOS Circuit Design, Layout, and Simulation 3rd - Baker"
 date: 2026-11-28
 collection:
   profile: wiki
   id: books
 ---
 
-# CMOS Circuit Design, Layout, and Simulation（第三版） 大纲目录
-
+# CMOS Circuit Design, Layout, and Simulation 3rd - Baker 大纲目录
 作者：R. Jacob Baker（Wiley-IEEE Press，2010）
 ISBN：978-0-470-89117-9
 

@@ -1,13 +1,12 @@
 ---
-title: "Systematic Design of Analog CMOS Circuits"
+title: "Systematic Design of Analog CMOS Circuits - Jespers Murmann"
 date: 2026-11-28
 collection:
   profile: wiki
   id: books
 ---
 
-# Systematic Design of Analog CMOS Circuits 大纲目录
-
+# Systematic Design of Analog CMOS Circuits - Jespers Murmann 大纲目录
 作者：Paul G. A. Jespers、Boris Murmann（Cambridge University Press，2017）
 ISBN：978-1-107-19225-6
 

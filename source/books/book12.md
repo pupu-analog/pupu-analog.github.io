@@ -1,13 +1,12 @@
 ---
-title: "The Art and Science of Analog Circuit Design-Newnes (1998)"
+title: "The Art and Science of Analog Circuit Design - Williams"
 date: 2026-11-28
 collection:
   profile: wiki
   id: books
 ---
 
-# The Art and Science of Analog Circuit Design（1998） 大纲目录
-
+# The Art and Science of Analog Circuit Design - Williams 大纲目录
 编者：Jim Williams（Newnes，1998）
 ISBN：978-0-7506-7062-3
 文集，17 位作者撰写的教程、历史与评论文章

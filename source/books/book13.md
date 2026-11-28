@@ -1,13 +1,12 @@
 ---
-title: "Analog Circuit Design_ Art, Science and Personalities"
+title: "Analog Circuit Design: Art, Science, and Personalities - Williams"
 date: 2026-11-28
 collection:
   profile: wiki
   id: books
 ---
 
-# Analog Circuit Design: Art, Science, and Personalities 大纲目录
-
+# Analog Circuit Design: Art, Science, and Personalities - Williams 大纲目录
 编者：Jim Williams（Newnes，1991）
 ISBN：0-7506-9166-2
 文集，30 篇文章，收录模拟设计名家的经验与设计哲学

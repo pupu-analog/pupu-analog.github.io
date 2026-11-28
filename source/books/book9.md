@@ -1,13 +1,12 @@
 ---
-title: "[Behzad_Razavi]_Fundamentals_of_Microelectronic"
+title: "Fundamentals of Microelectronics 2nd - Razavi"
 date: 2026-11-28
 collection:
   profile: wiki
   id: books
 ---
 
-# Fundamentals of Microelectronics（第二版） 大纲目录
-
+# Fundamentals of Microelectronics 2nd - Razavi 大纲目录
 作者：Behzad Razavi（Wiley，2013）
 ISBN：978-1-118-15632-2
 

@@ -1,13 +1,12 @@
 ---
-title: "Intuitive-Analog-Circuit-Design-Second-Edition"
+title: "Intuitive Analog Circuit Design 2nd - Thompson"
 date: 2026-11-28
 collection:
   profile: wiki
   id: books
 ---
 
-# Intuitive Analog Circuit Design（第二版） 大纲目录
-
+# Intuitive Analog Circuit Design 2nd - Thompson 大纲目录
 作者：Marc Thompson（Newnes，2013）
 ISBN：978-0-12-391426-2
 

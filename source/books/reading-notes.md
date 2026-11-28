@@ -18,13 +18,13 @@ collection:
 - [Analog Design Essentials - Sansen](/books/book4/)
 - [CMOS Analog Circuit Design 3rd - Allen](/books/book5/)
 - [Design of Analog Integrated Circuits and Systems - Laker Sansen](/books/book6/)
-- [CMOS-Circuit-Design-Layout-and-Simulation-3rd-Edition](/books/book7/)
-- [R. Jacob Baker - CMOS Mixed-Signal Circuit Design](/books/book8/)
-- [\[Behzad_Razavi\]_Fundamentals_of_Microelectronic](/books/book9/)
-- [Intuitive-Analog-Circuit-Design-Second-Edition](/books/book10/)
-- [Systematic Design of Analog CMOS Circuits](/books/book11/)
-- [The Art and Science of Analog Circuit Design-Newnes (1998)](/books/book12/)
-- [Analog Circuit Design_ Art, Science and Personalities](/books/book13/)
+- [CMOS Circuit Design, Layout, and Simulation 3rd - Baker](/books/book7/)
+- [CMOS Mixed-Signal Circuit Design 2nd - Baker](/books/book8/)
+- [Fundamentals of Microelectronics 2nd - Razavi](/books/book9/)
+- [Intuitive Analog Circuit Design 2nd - Thompson](/books/book10/)
+- [Systematic Design of Analog CMOS Circuits - Jespers Murmann](/books/book11/)
+- [The Art and Science of Analog Circuit Design - Williams](/books/book12/)
+- [Analog Circuit Design: Art, Science, and Personalities - Williams](/books/book13/)
 
 ## Analog circuits design 系列
 
